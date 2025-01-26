@@ -6,7 +6,7 @@ import About from './pages/About'
 import Shop from './pages/Shop'
 import FAQs from './pages/FAQs'
 import Contact from './pages/Contact'
-import Error from './pages/Error'
+import Error from './Components/Error'
 
 function App() {
 const router = createBrowserRouter(

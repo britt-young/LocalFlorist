@@ -1,5 +1,6 @@
 import { React, useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom"; //provides an active class to the link (can use for css styling)
+import { ReactComponent as Logo } from "../assets/logos/logo-1.svg"; //importing the logo
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -39,16 +40,15 @@ const NavBar = () => {
           </li>
           {/* Logo or brand */}
           <li className="text-xl font-bold">
-            <NavLink to="/">Logo</NavLink>
+            <NavLink to="/">
+              <Logo className="h-8 w-auto" />
+            </NavLink>
           </li>
           <li className="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0">
             <NavLink to="/faqs">FAQs</NavLink>
           </li>
           <li className="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0">
             <NavLink to="/contact">Contact</NavLink>
-          </li>
-          <li className="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0">
-            <NavLink to="/page5">Page 5</NavLink>
           </li>
         </ul>
         {/* look-up {replace:true} for buttons/useNavigate Hook */}

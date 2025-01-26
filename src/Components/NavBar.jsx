@@ -1,6 +1,8 @@
 import { React, useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom"; //provides an active class to the link (can use for css styling)
 //import { ReactComponent as Logo } from "../assets/logos/logo-1.svg"; //importing the logo
+import logo from "../assets/logos/logo-1.svg";
+//import cart from "../assets/icons/shop-basket.png";
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -39,12 +41,11 @@ const NavBar = () => {
             <NavLink to="/shop">Shop</NavLink>
           </li>
           {/* Logo or brand */}
-          <img src="/src/assets/logos/logo-1.svg" alt="Logo" className="h-auto w-auto" />
-          {/* <li className="text-xl font-bold">
+          <li className="text-xl font-bold">
             <NavLink to="/">
-              <Logo className="h-full w-auto" />
+              <img src={logo} alt="Logo" className="h-auto w-auto" />
             </NavLink>
-          </li> */}
+          </li>
           <li className="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0">
             <NavLink to="/faqs">FAQs</NavLink>
           </li>
@@ -52,6 +53,7 @@ const NavBar = () => {
             <NavLink to="/contact">Contact</NavLink>
           </li>
         </ul>
+        {/* <img src={cart} alt="cart" className="" /> */}
         {/* look-up {replace:true} for buttons/useNavigate Hook */}
       </nav>
 

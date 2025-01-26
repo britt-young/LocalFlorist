@@ -32,20 +32,20 @@ const NavBar = () => {
         {/* Desktop menu */}
         <ul className="hidden lg:flex justify-center items-center w-full space-x-14">
           <li className="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0">
-            <NavLink to="/">Page 1</NavLink>
+            <NavLink to="/about">About</NavLink>
           </li>
           <li className="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0">
-            <NavLink to="/page2">Page 2</NavLink>
+            <NavLink to="/shop">Shop</NavLink>
           </li>
           {/* Logo or brand */}
           <li className="text-xl font-bold">
-            <NavLink to="/page3">Logo</NavLink>
+            <NavLink to="/">Logo</NavLink>
           </li>
           <li className="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0">
-            <NavLink to="/page3">Page 3</NavLink>
+            <NavLink to="/faqs">FAQs</NavLink>
           </li>
           <li className="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0">
-            <NavLink to="/page4">Page 4</NavLink>
+            <NavLink to="/contact">Contact</NavLink>
           </li>
           <li className="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0">
             <NavLink to="/page5">Page 5</NavLink>

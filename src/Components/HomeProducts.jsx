@@ -25,7 +25,7 @@ const HomeProducts = () => {
       </div>
       <Link
         to="/shop"
-        className="py-2 m-10 inline-block rounded border-2 border-primary px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-primary hover:bg-primary hover:text-tertiary"
+        className="py-2 m-10 inline-block border-2 border-primary px-6 pb-[6px] pt-2 text-xs font-medium leading-normal text-primary hover:bg-primary hover:text-tertiary"
       >
         See More Best Sellers
       </Link>

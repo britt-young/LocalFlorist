@@ -9,7 +9,7 @@ const AboutIntro = () => {
         <div className='flex justify-center'>
           <img src={owner} alt="product" className="w-[509px] m-10" />
         </div>
-        <div className='m-10 flex flex-col justify-center items-start'>
+        <div className='m-10 flex flex-col justify-center items-end text-right'>
           <h2 className="text-black mb-5">The Local Florist</h2>
           <p className='text-primary'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -19,9 +19,9 @@ const AboutIntro = () => {
           </p>
           <Link
             to="/about"
-            className="py-2 mt-10 inline-block rounded border-2 border-primary px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-primary hover:bg-primary hover:text-tertiary"
+            className="py-2 mt-10 inline-block border-2 border-primary bg-primary px-6 pb-[6px] pt-2 text-xs font-medium leading-normal text-tertiary hover:bg-tertiary hover:text-primary"
           >
-            See More Best Sellers
+            Read More
           </Link>
         </div>
       </div>

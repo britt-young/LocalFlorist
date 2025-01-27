@@ -10,7 +10,7 @@ const NavBar = () => {
 
   return (
     <div className="bg-tertiary text-primary">
-      <nav className="flex items-center justify-end p-4">
+      <nav className="flex items-center justify-end">
         {/* Mobile menu toggle */}
         <button
           className="lg:hidden p-2"

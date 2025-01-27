@@ -14,7 +14,7 @@ const HomeHero = () => {
                 <h3 className="mb-8 text-3xl font-bold">Professionally styled floral bouquets and arrangements</h3>
                 <Link
                   to="/shop"
-                  className="inline-block rounded border-2 border-tertiary-50 px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-tertiary-50 transition duration-150 ease-in-out hover:border-tertiary-300 hover:text-tertiary-200 focus:border-tertiary-300 focus:text-tertiary-200 focus:outline-none focus:ring-0 active:border-tertiary-300 active:text-tertiary-200 dark:hover:bg-tertiary-600 dark:focus:bg-tertiary-600"
+                  className="inline-block rounded border-2 border-tertiary px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-tertiary hover:bg-tertiary hover:text-primary"  
                 >
                   Shop All
                 </Link>

@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
 import bridal from '../assets/imgs/shop-bridal.jpg'
 import arrangements from '../assets/imgs/shop-arrangements.jpg'
 import bouquets from '../assets/imgs/shop-bouquets.jpg'
@@ -21,7 +23,12 @@ const HomeProducts = () => {
             <p className='text-primary'>Shop Bouquets</p>
             </div>
         </div>
-        <button className='bg-black text-white px-4 py-2 m-10'>See More Best Sellers</button>
+        <Link
+                  to="/shop"
+                  className="py-2 m-10 inline-block rounded border-2 border-primary px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-primary hover:bg-primary hover:text-tertiary"
+                >
+                  See More Best Sellers
+                </Link>
     </div>
   )
 }

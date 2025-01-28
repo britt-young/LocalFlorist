@@ -1,17 +1,24 @@
-import React from "react";
+import React, { useEffect } from 'react';
 import LazyLoad from "react-lazyload";
 
 // Instagram Embed Component
 const InstagramEmbed = ({ embedCode }) => {
-  return (
-    <div className="w-full p-4">
-      <div
-        className="instagram-embed"
-        dangerouslySetInnerHTML={{ __html: embedCode }} // Insert the embed code dynamically
-      />
-    </div>
-  );
-};
+    useEffect(() => {
+        // Check if Instagram embed script is available, and if so, initialize it
+        if (window.instgrm && window.instgrm.Embeds) {
+          window.instgrm.Embeds.process(); // Manually trigger Instagram embeds to process
+        }
+      }, []);
+    
+      return (
+        <div className="w-full p-4">
+          <div
+            className="instagram-embed"
+            dangerouslySetInnerHTML={{ __html: embedCode }} // Insert the embed code dynamically
+          />
+        </div>
+      );
+    };
 
 const InstagramGallery = () => {
   // Example embed codes for Instagram posts
@@ -35,7 +42,9 @@ const InstagramGallery = () => {
         <h2 className="font-bold mb-0 text-center text-primary">
           Client Appreciation
         </h2>
-        <h3 className="font-light text-2xl mb-4 text-center text-primary">tag us on Instagram @urLocalFlorist</h3>
+        <h3 className="font-light text-2xl mb-4 text-center text-primary">
+          tag us on Instagram @urLocalFlorist
+        </h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
           {instagramEmbeds.map((embedCode, index) => (
             <LazyLoad

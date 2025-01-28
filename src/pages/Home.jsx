@@ -5,6 +5,7 @@ import HomeProducts from '../Components/HomeProducts'
 import AboutIntro from '../Components/AboutIntro'
 import HomeCustom from '../Components/HomeCustom'
 import HomeTestimonials from '../Components/HomeTestimonials'
+import InstagramGallery from '../Components/InstagramEmbed'
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <AboutIntro />
       <HomeCustom />
       <HomeTestimonials />
+      <InstagramGallery />
     </div>
   )
 }

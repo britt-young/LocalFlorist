@@ -6,6 +6,7 @@ import AboutIntro from '../Components/AboutIntro'
 import HomeCustom from '../Components/HomeCustom'
 import HomeTestimonials from '../Components/HomeTestimonials'
 import InstagramGallery from '../Components/InstagramEmbed'
+import Footer from '../Components/Footer'
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <HomeCustom />
       <HomeTestimonials />
       <InstagramGallery />
+      <Footer />
     </div>
   )
 }

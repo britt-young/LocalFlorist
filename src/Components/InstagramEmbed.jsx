@@ -1,24 +1,24 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 import LazyLoad from "react-lazyload";
 
 // Instagram Embed Component
 const InstagramEmbed = ({ embedCode }) => {
-    useEffect(() => {
-        // Check if Instagram embed script is available, and if so, initialize it
-        if (window.instgrm && window.instgrm.Embeds) {
-          window.instgrm.Embeds.process(); // Manually trigger Instagram embeds to process
-        }
-      }, []);
-    
-      return (
-        <div className="w-full p-4">
-          <div
-            className="instagram-embed"
-            dangerouslySetInnerHTML={{ __html: embedCode }} // Insert the embed code dynamically
-          />
-        </div>
-      );
-    };
+  useEffect(() => {
+    // Check if Instagram embed script is available, and if so, initialize it
+    if (window.instgrm && window.instgrm.Embeds) {
+      window.instgrm.Embeds.process(); // Manually trigger Instagram embeds to process
+    }
+  }, []);
+
+  return (
+    <div className="w-full p-4">
+      <div
+        className="instagram-embed"
+        dangerouslySetInnerHTML={{ __html: embedCode }} // Insert the embed code dynamically
+      />
+    </div>
+  );
+};
 
 const InstagramGallery = () => {
   // Example embed codes for Instagram posts

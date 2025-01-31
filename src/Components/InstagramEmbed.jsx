@@ -37,12 +37,12 @@ const InstagramGallery = () => {
   ];
 
   return (
-    <div className="bg-white md:h-[600px]">
-      <div className="max-w-full mx-auto py-10 px-4">
-        <h2 className="font-bold mb-0 text-center text-primary">
+    <div className="bg-white md:h-full">
+      <div className="max-w-full mx-auto p-5">
+        <h2 className="font-bold mb-0 mt-5 text-center text-primary">
           Client Appreciation
         </h2>
-        <h3 className="font-light text-2xl mb-4 text-center text-primary">
+        <h3 className="font-light text-2xl mb-10 text-center text-primary">
           tag us on Instagram @urLocalFlorist
         </h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">

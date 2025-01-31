@@ -2,9 +2,9 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="isolate bg-tertiary px-6 py-24 sm:py-32 lg:px-8">
+    <div className="isolate bg-tertiary px-6 py-24 sm:py-32 lg:px-8 mt-10">
       <div
-        className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
+        className="absolute inset-x-0 top-0 -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-5rem]"
         aria-hidden="true"
       >
         <div

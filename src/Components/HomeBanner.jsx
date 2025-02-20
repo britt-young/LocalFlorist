@@ -15,7 +15,7 @@ const HomeBanner = () => {
   if (!isVisible) return null; // If not visible, return null to remove the component
 
   return (
-    <div className="relative isolate flex items-center gap-x-6 overflow-hidden px-6 py-2.5 sm:px-3.5 sm:before:flex-1 bg-gradient-to-r from-primary to-secondary">
+    <div className="relative isolate flex items-center gap-x-6 overflow-hidden px-6 py-2.5 sm:px-3.5 sm:before:flex-1 bg-linear-to-r from-primary to-secondary">
       <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
         <p className="text-sm/6 text-tertiary">
           <strong className="font-semibold uppercase">
@@ -32,7 +32,7 @@ const HomeBanner = () => {
         </p>
         <a
           href="/shop"
-          className="flex-none rounded-full bg-primary px-3.5 py-1 text-sm font-semibold text-white shadow-xs hover:bg-gray-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
+          className="flex-none rounded-full bg-primary px-3.5 py-1 text-sm font-semibold text-white shadow-2xs hover:bg-gray-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
         >
           Shop now <span aria-hidden="true">&rarr;</span>
         </a>

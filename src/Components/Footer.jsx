@@ -71,7 +71,7 @@ const Footer = () => {
                 value={formData.firstName}
                 onChange={handleChange}
                 placeholder="First Name"
-                className="w-1/2 p-3 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-1/2 p-3 border border-gray-300 focus:outline-hidden focus:ring-2 focus:ring-blue-500"
                 required
               />
               <input
@@ -80,7 +80,7 @@ const Footer = () => {
                 value={formData.lastName}
                 onChange={handleChange}
                 placeholder="Last Name"
-                className="w-1/2 p-3 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-1/2 p-3 border border-gray-300 focus:outline-hidden focus:ring-2 focus:ring-blue-500"
                 required
               />
             </div>
@@ -90,7 +90,7 @@ const Footer = () => {
               value={formData.email}
               onChange={handleChange}
               placeholder="Email"
-              className="w-full p-3 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full p-3 border border-gray-300 focus:outline-hidden focus:ring-2 focus:ring-blue-500"
               required
             />
             <textarea
@@ -99,7 +99,7 @@ const Footer = () => {
               onChange={handleChange}
               placeholder="Your Message"
               rows="4"
-              className="w-full p-3 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full p-3 border border-gray-300 focus:outline-hidden focus:ring-2 focus:ring-blue-500"
               required
             />
             <button

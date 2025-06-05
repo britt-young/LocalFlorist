@@ -1,8 +1,9 @@
-import React from 'react'
 
 const About = () => {
   return (
-    <div>About</div>
+    <div className="flex flex-col items-center justify-center min-h-screen bg-secondary">
+      ABOUT PAGE
+    </div>
   )
 }
 

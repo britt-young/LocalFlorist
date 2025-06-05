@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import owner from "../assets/imgs/owner.jpg";
 

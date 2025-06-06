@@ -2,7 +2,7 @@ import React from 'react'
 import HomeBanner from '../Components/HomeBanner'
 import HomeHero from '../Components/HomeHero'
 import HomeProducts from '../Components/HomeProducts'
-import AboutIntro from '../Components/AboutIntro'
+import HomeAbout from '../Components/HomeAbout'
 import HomeCustom from '../Components/HomeCustom'
 import HomeTestimonials from '../Components/HomeTestimonials'
 import InstagramGallery from '../Components/InstagramEmbed'
@@ -14,7 +14,7 @@ const Home = () => {
       <HomeBanner />
       <HomeHero />
       <HomeProducts />
-      <AboutIntro />
+      <HomeAbout />
       <HomeCustom />
       <HomeTestimonials />
       <InstagramGallery />

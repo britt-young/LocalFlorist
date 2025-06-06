@@ -19,7 +19,7 @@ const HomeCustom = () => {
             to="/contact"
             className="py-2 my-5 inline-block border-2 border-primary bg-tertiary px-6 pb-[6px] pt-2 text-xs font-medium leading-normal text-primary hover:bg-primary hover:text-tertiary"
           >
-            Place an order
+            Place an Order
           </Link>
         </div>
         <div className="flex justify-center">

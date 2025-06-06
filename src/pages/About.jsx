@@ -1,8 +1,11 @@
+import AboutBanner from "../Components/AboutBanner"
+import AboutHero from "../Components/AboutHero"
 
 const About = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-secondary">
-      ABOUT PAGE
+    <div>
+      <AboutHero />
+      <AboutBanner />
     </div>
   )
 }

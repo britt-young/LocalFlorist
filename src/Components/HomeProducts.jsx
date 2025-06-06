@@ -27,7 +27,7 @@ const HomeProducts = () => {
         to="/shop"
         className="py-2 m-10 inline-block border-2 border-primary bg-tertiary px-6 pb-[6px] pt-2 text-xs font-medium leading-normal text-primary hover:bg-primary hover:text-tertiary"
       >
-        See More Best Sellers
+        Shop Best Sellers
       </Link>
     </div>
   );

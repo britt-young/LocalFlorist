@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import owner from "../assets/imgs/owner.jpg";
 
-const AboutIntro = () => {
+const HomeAbout = () => {
   return (
     <div className="md:h-[600px] flex flex-col justify-center items-center bg-secondary">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mx-5 md:mx-60">
@@ -28,4 +28,4 @@ const AboutIntro = () => {
   );
 };
 
-export default AboutIntro;
+export default HomeAbout;

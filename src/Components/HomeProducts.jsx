@@ -8,7 +8,7 @@ import bouquets from '../assets/imgs/shop-bouquets.jpg'
 const HomeProducts = () => {
   return (
     <div className="md:h-[700px] flex flex-col justify-center items-center">
-      <h1 className="text-black m-10">Our Best Sellers</h1>
+      <h2 className="text-black m-10">Our Best Sellers</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mx-0 md:mx-10">
         <div>
           <img src={bridal} alt="product" className="w-[405px]" />

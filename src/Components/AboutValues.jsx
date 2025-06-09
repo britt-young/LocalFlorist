@@ -37,7 +37,7 @@ const AboutValues = () => {
           </div>
           <h4 className="text-primary">Handled with Care</h4>
           <p className="text-gray-600">
-            we handle all orders as if they were our own
+            We handle all orders as if they were our own
           </p>
         </div>
       </div>

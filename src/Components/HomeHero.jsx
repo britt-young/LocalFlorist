@@ -9,7 +9,7 @@ const HomeHero = () => {
         <div className="relative h-[800px] overflow-hidden bg-[url('C:\Users\britt\develop\LocalFlorist\frontend\src\assets\imgs\hero1.jpg')] bg-cover bg-[50%] bg-no-repeat">
           <div className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-black/20 bg-fixed">
             <div className="flex flex-col items-center text-center justify-center h-full w-full text-tertiary">
-              <div className="bg-transparent backdrop-blur-sm p-4">
+              <div className="bg-transparent backdrop-blur-sm p-4 mx-10 lg:mx-0">
                 <h1>
                   Handpicked Happiness
                 </h1>

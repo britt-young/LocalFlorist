@@ -6,8 +6,8 @@ import custom from "../assets/imgs/custom.jpg";
 const HomeCustom = () => {
   return (
     <div className="md:h-[600px] flex flex-col justify-center items-center bg-white">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mx-5 md:mx-60">
-        <div className="md:mr-20 md:mt-0 mt-5 flex flex-col justify-center items-start text-left">
+      <div className="max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-4 mx-5">
+        <div className=" md:mt-0 mt-5 flex flex-col justify-center items-start text-left">
           <h2 className="text-black mb-5">Craving some Creative Control?</h2>
           <p className="text-primary">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -22,7 +22,7 @@ const HomeCustom = () => {
             Place an Order
           </Link>
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-end">
           <img src={custom} alt="product" className="w-[509px] mb-5 md:m-0" />
         </div>
       </div>

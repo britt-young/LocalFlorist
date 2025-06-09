@@ -4,11 +4,11 @@ import owner from "../assets/imgs/owner.jpg";
 const HomeAbout = () => {
   return (
     <div className="md:h-[600px] flex flex-col justify-center items-center bg-secondary">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mx-5 md:mx-60">
-        <div className="flex justify-center">
-          <img src={owner} alt="product" className="w-[509px] mt-10 md:m-0" />
+      <div className="max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-4 mx-5">
+        <div className="flex justify-start">
+          <img src={owner} alt="product" className="w-[509px] mt-10 lg:m-0" />
         </div>
-        <div className="md:mr-20 flex flex-col justify-center items-end text-right">
+        <div className=" flex flex-col justify-center items-end text-right">
           <h2 className="text-black mb-5">The Local Florist</h2>
           <p className="text-primary">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

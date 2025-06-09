@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import logo from "../assets/logos/logo-2.svg";
+import Copyright from "./Copyright";
 
 const Footer = () => {
   const [formData, setFormData] = useState({
@@ -57,7 +58,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-tertiary text-secondary py-10">
+    <footer className="bg-tertiary text-secondary pt-10">
       <div className="flex flex-col-reverse lg:flex-row max-w-5xl mx-auto px-6 md:flex justify-between gap-20 lg:gap-40">
         {/* Left Section: Contact Form */}
         <div className="w-full md:w-1/2">
@@ -131,60 +132,60 @@ const Footer = () => {
         </div>
       </div>
       {/* Site Map Section */}
-      <div class="max-w-11/12 mx-auto mt-15 lg:border-t border-primary pt-2 text-primary">
-        <div class="grid grid-flow-col grid-rows-2 lg:grid-rows-1 text-center items-center justify-center gap-8">
-          <div class="group">
-            <a href="/" class="group-hover:font-bold">
+      <div className="max-w-11/12 mx-auto mt-15 lg:border-t border-primary pt-2 text-primary">
+        <div className="grid grid-flow-col grid-rows-2 lg:grid-rows-1 text-center items-center justify-center gap-8">
+          <div className="group">
+            <a href="/" className="group-hover:font-bold">
               Home
             </a>
           </div>
-          <div class="group">
-            <a href="about" class="group-hover:font-bold">
+          <div className="group">
+            <a href="about" className="group-hover:font-bold">
               About Us
             </a>
           </div>
-          <div class="group">
-            <a href="shop" class="group-hover:font-bold">
+          <div className="group">
+            <a href="shop" className="group-hover:font-bold">
               Shop All
             </a>
           </div>
-          <div class="group">
-            <a href="contact" class="group-hover:font-bold">
+          <div className="group">
+            <a href="contact" className="group-hover:font-bold">
               Contact
             </a>
           </div>
-          <div class="group">
-            <a href="faqs" class="group-hover:font-bold">
+          <div className="group">
+            <a href="faqs" className="group-hover:font-bold">
               FAQs
             </a>
           </div>
-          <div class="group">
-            <a href="#" class="group-hover:font-bold">
+          <div className="group">
+            <a href="#" className="group-hover:font-bold">
               Shipping
             </a>
           </div>
-          <div class="group">
-            <a href="#" class="group-hover:font-bold">
+          <div className="group">
+            <a href="#" className="group-hover:font-bold">
               Terms of Use
             </a>
           </div>
-          <div class="group">
-            <a href="#" class="group-hover:font-bold">
+          <div className="group">
+            <a href="#" className="group-hover:font-bold">
               Privacy Policy
             </a>
           </div>
         </div>
       </div>
       {/* Sicial Media Icons */}
-      <div class="flex items-center justify-center my-10 gap-4">
+      <div className="flex items-center justify-center my-10 gap-4">
         <a
           href="https://facebook.com"
           aria-label="Facebook"
-          class="group p-2 rounded-full bg-primary text-white hover:bg-primary/60 transition"
+          className="group p-2 rounded-full bg-primary text-white hover:bg-primary/60 transition"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="w-5 h-5 group-hover:scale-110 transition-transform"
+            className="w-5 h-5 group-hover:scale-110 transition-transform"
             fill="currentColor"
             viewBox="0 0 24 24"
           >
@@ -195,11 +196,11 @@ const Footer = () => {
         <a
           href="https://x.com"
           aria-label="X"
-          class="group p-2 rounded-full bg-primary text-white hover:bg-primary/60 transition"
+          className="group p-2 rounded-full bg-primary text-white hover:bg-primary/60 transition"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="w-5 h-5 group-hover:scale-110 transition-transform"
+            className="w-5 h-5 group-hover:scale-110 transition-transform"
             viewBox="0 0 1200 1227"
             fill="currentColor"
           >
@@ -210,11 +211,11 @@ const Footer = () => {
         <a
           href="https://instagram.com"
           aria-label="Instagram"
-          class="group p-2 rounded-full bg-primary text-white hover:bg-primary/60 transition"
+          className="group p-2 rounded-full bg-primary text-white hover:bg-primary/60 transition"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="w-5 h-5 group-hover:scale-110 transition-transform"
+            className="w-5 h-5 group-hover:scale-110 transition-transform"
             fill="currentColor"
             viewBox="0 0 24 24"
           >
@@ -223,7 +224,8 @@ const Footer = () => {
             <circle cx="18.4" cy="5.6" r="1.44" />
           </svg>
         </a>
-      </div>
+      </div>      
+      <Copyright />
     </footer>
   );
 };

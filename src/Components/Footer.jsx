@@ -12,9 +12,9 @@ const Footer = () => {
         {/* Left Section: Contact Form */}
         <div className="w-full md:w-1/2">
           <h2 className="text-black">Custom Orders</h2>
-          <h3 className="text-black/50 mb-10">
+          <h4 className="text-black/50 mb-10">
             Send us a custom order request
-          </h3>
+          </h4>
           <ContactForm />
         </div>
 

@@ -57,7 +57,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-tertiary text-white py-10">
+    <footer className="bg-tertiary text-secondary py-10">
       <div className="max-w-7xl mx-auto px-6 md:flex justify-between gap-40">
         {/* Left Section: Contact Form */}
         <div className="w-full md:w-1/2">
@@ -71,7 +71,7 @@ const Footer = () => {
                 value={formData.firstName}
                 onChange={handleChange}
                 placeholder="First Name"
-                className="w-1/2 p-3 border border-gray-300 focus:outline-hidden focus:ring-2 focus:ring-blue-500"
+                className="w-1/2 p-3 bg-white border border-gray-300 focus:outline-hidden focus:ring-2 focus:ring-blue-500"
                 required
               />
               <input
@@ -80,7 +80,7 @@ const Footer = () => {
                 value={formData.lastName}
                 onChange={handleChange}
                 placeholder="Last Name"
-                className="w-1/2 p-3 border border-gray-300 focus:outline-hidden focus:ring-2 focus:ring-blue-500"
+                className="w-1/2 p-3 bg-white border border-gray-300 focus:outline-hidden focus:ring-2 focus:ring-blue-500"
                 required
               />
             </div>
@@ -90,7 +90,7 @@ const Footer = () => {
               value={formData.email}
               onChange={handleChange}
               placeholder="Email"
-              className="w-full p-3 border border-gray-300 focus:outline-hidden focus:ring-2 focus:ring-blue-500"
+              className="w-full p-3 bg-white border border-gray-300 focus:outline-hidden focus:ring-2 focus:ring-blue-500"
               required
             />
             <textarea
@@ -99,12 +99,12 @@ const Footer = () => {
               onChange={handleChange}
               placeholder="Your Message"
               rows="4"
-              className="w-full p-3 border border-gray-300 focus:outline-hidden focus:ring-2 focus:ring-blue-500"
+              className="w-full p-3 bg-white border border-gray-300 focus:outline-hidden focus:ring-2 focus:ring-blue-500"
               required
             />
             <button
               type="submit"
-              className="w-full py-3 bg-blue-500 text-white hover:bg-blue-600 transition duration-300"
+              className="w-full py-3 bg-primary text-white hover:bg-primary/30 hover:cursor-pointer transition duration-300"
             >
               Send Message
             </button>

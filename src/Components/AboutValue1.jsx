@@ -6,10 +6,10 @@ const AboutValue1 = () => {
     <div className="md:h-[500px] flex flex-col justify-center items-center bg-secondary">
       <div className="max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-4 mx-5 lg:mx-0">
         <div className="lg:mt-0 mt-5 flex flex-col justify-center items-start text-left">
-          <span className="inline-flex items-baseline">
+          <span className="inline-flex items-baseline mb-2">
             <img
               src={bouquet}
-              className="mx-1 size-10 self-center rounded-full"
+              className="me-4 size-10 self-center rounded-full"
             />
             <span>
               <h2 className="text-black">Farm-fresh Quality</h2>

@@ -9,10 +9,10 @@ const AboutValue3 = () => {
               <img src={value3} alt="product" className="w-[450px] mb-5 lg:mb-0 shadow-lg" />
             </div>
             <div className="flex flex-col justify-center items-start text-left">
-              <span className="inline-flex items-baseline">
+              <span className="inline-flex items-baseline mb-2">
                           <img
                             src={delivery}
-                            className="mx-1 size-10 self-center rounded-full"
+                            className="me-4 size-10 self-center rounded-full"
                           />
                           <span>
                             <h2 className="text-black">Farm-fresh Quality</h2>

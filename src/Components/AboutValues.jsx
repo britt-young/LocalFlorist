@@ -13,6 +13,7 @@ const AboutValues = () => {
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-10 max-w-7xl">
+        {/* Value 1 */}
         <div className="text-center bg-tertiary px-4 pb-5 shadow-md items-center justify-center flex flex-col">
           <div className="flex m-5 w-15 h-15 bg-primary/80 rounded-full shadow-md">
             <img src={bouquet} alt="flower bouquet icon" className="w-full"/>
@@ -22,6 +23,7 @@ const AboutValues = () => {
             We strive for the highest quality in our products and sourcing
           </p>
         </div>
+        {/* Value 2 */}
         <div className="text-center bg-tertiary px-4 pb-5 shadow-md items-center justify-center flex flex-col">
             <div className="flex m-5 w-15 h-15 bg-primary/80 rounded-full shadow-md">
             <img src={price} alt="flower bouquet icon" className="w-full"/>
@@ -31,6 +33,7 @@ const AboutValues = () => {
             We uphold honesty and transparency in our pricing and shipping costs
           </p>
         </div>
+        {/* Value 3 */}
         <div className="text-center bg-tertiary px-4 pb-5 shadow-md items-center justify-center flex flex-col">
             <div className="flex m-5 w-15 h-15 bg-primary/80 rounded-full shadow-md">
             <img src={delivery} alt="flower bouquet icon" className="w-full"/>

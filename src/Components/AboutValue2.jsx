@@ -4,10 +4,10 @@ const AboutValue2 = () => {
   return (
     <div className="md:h-[300px] flex flex-col justify-center items-center text-center bg-primary">
       <div className="max-w-7xl flex flex-col m-5 lg:m-0">
-        <span className="inline-flex items-baseline justify-center">
+        <span className="inline-flex items-baseline justify-center mb-2">
                     <img
                       src={price}
-                      className="mx-1 size-10 self-center rounded-full"
+                      className="me-4 size-10 self-center rounded-full"
                     />
                     <span>
                       <h2 className="text-white">Responsibly Priced Arrangements</h2>

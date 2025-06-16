@@ -8,7 +8,7 @@ const AboutHero = () => {
             <div className="flex flex-col items-center justify-center text-center h-full w-full">
               <div className="bg-transparent backdrop-blur-sm p-4">
                 <h1>Our Story</h1>
-                <h3>Professionally styled floral bouquets and arrangements</h3>
+                <h3 className="mb-0">Professionally styled floral bouquets and arrangements</h3>
               </div>
             </div>
           </div>

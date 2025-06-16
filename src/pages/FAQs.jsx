@@ -1,8 +1,13 @@
-import React from 'react'
+import FAQsHero from '../Components/FAQsHero'
+import FAQsStepper from '../Components/FAQsStepper'
+
 
 const FAQs = () => {
   return (
-    <div>FAQs</div>
+    <div>
+    <FAQsHero />
+    <FAQsStepper />
+    </div>
   )
 }
 

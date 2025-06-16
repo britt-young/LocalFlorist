@@ -1,5 +1,6 @@
 import male from "../assets/icons/male-profile.png";
 import female from "../assets/icons/fem-profile.png";
+import { Link } from "react-router-dom";
 
 const AboutTestimonials = () => {
   return (
@@ -264,6 +265,12 @@ const AboutTestimonials = () => {
           </p>
         </div>
       </div>
+       <Link
+            to="/about"
+            className="py-2 mt-10 inline-block border-2 border-primary bg-primary px-6 pb-[6px] pt-2 text-xs font-medium leading-normal text-tertiary hover:bg-tertiary hover:text-primary"
+          >
+            Shop All Flowers
+          </Link>
     </div>
   );
 };

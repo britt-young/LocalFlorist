@@ -7,12 +7,12 @@ const AboutValues = () => {
     <div className="md:h-[500px] flex flex-col justify-center items-center mx-10 my-10 lg:mx-0 lg:my-0">
       <div className="text-center">
         <h2 className="text-black mb-2">Our Values</h2>
-        <p className="text-primary">
+        <h3 className="text-primary">
           We are committed to excellence, integrity, and innovation in
           everything we do.
-        </p>
+        </h3>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-10 max-w-7xl">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-5 max-w-7xl">
         {/* Value 1 */}
         <div className="text-center bg-tertiary px-4 pb-5 shadow-md items-center justify-center flex flex-col">
           <div className="flex m-5 w-15 h-15 bg-primary/80 rounded-full shadow-md">

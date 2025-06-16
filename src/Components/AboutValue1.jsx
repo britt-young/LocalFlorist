@@ -25,7 +25,7 @@ const AboutValue1 = () => {
         <div className="flex justify-end">
           <img
             src={value1}
-            alt="product"
+            alt="florist"
             className="w-[450px] mb-5 lg:m-0 shadow-lg"
           />
         </div>

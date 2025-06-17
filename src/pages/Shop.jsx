@@ -1,9 +1,11 @@
-import React from 'react'
+import ProductsGrid from "../Components/ProductsGrid";
 
 const Shop = () => {
   return (
-    <div>Shop</div>
-  )
-}
+    <div className="max-w-7xl mx-auto">
+        <ProductsGrid />
+    </div>
+  );
+};
 
-export default Shop
+export default Shop;

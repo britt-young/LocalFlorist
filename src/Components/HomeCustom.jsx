@@ -4,11 +4,13 @@ import { Link } from "react-router-dom";
 import custom from "../assets/imgs/custom.jpg";
 
 const HomeCustom = () => {
+  AOS.init();
+
   return (
-    <div className="md:h-[600px] flex flex-col justify-center items-center bg-white">
-      <div className="max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-4 mx-5">
+    <div className="py-10 flex flex-col justify-center items-center bg-white">
+      <div className="max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-10 mx-5">
         <div className=" md:mt-0 mt-5 flex flex-col justify-center items-start text-left">
-          <h2 className="text-black mb-5">Craving some Creative Control?</h2>
+          <h2 className="text-black mb-2">Craving Creative Control?</h2>
           <p className="text-primary">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -23,7 +25,8 @@ const HomeCustom = () => {
           </Link>
         </div>
         <div className="flex justify-end">
-          <img src={custom} alt="product" className="w-[509px] mb-5 md:m-0" />
+          <img src={custom} alt="product" data-aos="zoom-in"
+     data-aos-duration="2000" className="w-full mb-5 md:m-0 shadow-2xl" />
         </div>
       </div>
     </div>

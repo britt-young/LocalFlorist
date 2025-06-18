@@ -20,6 +20,8 @@ const Home = () => {
     });
   }, []);
 
+AOS.init();
+
   return (
     <div>
       <HomeBanner />
@@ -27,11 +29,12 @@ const Home = () => {
       {/* Featured Products Section */}
       <div className="p-4 flex flex-col items-center justify-center text-center max-w-7xl mx-auto">
         <h2 className="text-black mb-4">Our Bestsellers</h2>
-        <div className=" grid grid-cols-1 lg:grid-cols-3 gap-0">
+        <div data-aos="zoom-in"
+     data-aos-duration="2000" className="grid grid-cols-1 lg:grid-cols-3 gap-0">
           {products.map(({ node }) => (
             <Link to={`/products/${node.handle}`} key={node.id}>
               <div className="p-2 text-start">
-                <img className="transition-transform duration-400 hover:scale-102 ease-in-out shadow-md" src={node.images.edges[0]?.node.url} alt={node.title} />
+                <img className="transition-transform duration-700 hover:scale-102 ease-in-out shadow-md" src={node.images.edges[0]?.node.url} alt={node.title} />
                 <h5 className="text-primary mt-2">{node.title}</h5>
                 {/* <p className="text-primary">${node.variants.edges[0].node.price.amount}</p> */}
               </div>
@@ -40,7 +43,7 @@ const Home = () => {
         </div>
         <Link
                 to="/shop"
-                className="py-2 m-10 inline-block border-2 border-primary bg-tertiary px-6 pb-[6px] pt-2 text-xs font-medium leading-normal text-primary hover:bg-primary hover:text-tertiary"
+                className="shadow-md py-2 m-10 inline-block border-2 border-primary bg-tertiary px-6 pb-[6px] pt-2 text-sm font-medium leading-normal text-primary hover:bg-primary hover:text-tertiary"
               >
                 Shop Best Sellers
               </Link>

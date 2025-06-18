@@ -32,7 +32,7 @@ AOS.init();
         <div data-aos="zoom-in"
      data-aos-duration="2000" className="grid grid-cols-1 lg:grid-cols-3 gap-0">
           {products.map(({ node }) => (
-            <Link to={`/products/${node.handle}`} key={node.id}>
+            <Link to={`/shop/${node.handle}`} key={node.id}>
               <div className="p-2 text-start">
                 <img className="transition-transform duration-700 hover:scale-102 ease-in-out shadow-md" src={node.images.edges[0]?.node.url} alt={node.title} />
                 <h5 className="text-primary mt-2">{node.title}</h5>

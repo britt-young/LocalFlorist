@@ -23,7 +23,7 @@ const Product = ({ handle }) => {
   if (!product) return <p>Product not found</p>;
 
   return (
-    <div className="p-4 max-w-3xl mx-auto">
+    <div className="py-20 max-w-6xl mx-auto">
       <h2 className="text-black mb-4">{product.title}</h2>
       <div className="flex gap-6">
         <div className="w-1/2">
@@ -39,7 +39,7 @@ const Product = ({ handle }) => {
             </div>
           )}
         </div>
-        <div className="w-1/2">
+        <div className="my-5 w-1/3">
           <p className="text-primary mb-6">{product.description}</p>
           <h5 className="text-secondary">Size Options:</h5>
           <ul>

@@ -6,7 +6,7 @@ import About from './pages/About'
 import Shop from './pages/Shop'
 import FAQs from './pages/FAQs'
 import Contact from './pages/Contact'
-import Product from './pages/Product'
+import ProductDetails from './pages/ProductDetails'
 import Error from './Components/Error'
 
 function App() {
@@ -16,7 +16,7 @@ const router = createBrowserRouter(
       <Route index element={<Home/>} />
       <Route path ='about' element={<About />} />
       <Route path ='shop' element={<Shop />} />
-      <Route path ='shop/:handle' element={<Product />} />
+      <Route path ='shop/:handle' element={<ProductDetails />} />
       <Route path ='faqs' element={<FAQs />} />
       <Route path ='contact' element={<Contact />} />
       {/* Can add nested routes too */}

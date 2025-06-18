@@ -1,5 +1,7 @@
+//MULTIPLE PRODUCTS PAGE
+
 import { useEffect, useState } from 'react'
-import { shopifyClient } from '../assets/lib/shopify'
+import { shopifyClient } from '../lib/shopify'
 import { GET_PRODUCTS } from '../queries/getProducts'
 import { Link } from 'react-router-dom'
 

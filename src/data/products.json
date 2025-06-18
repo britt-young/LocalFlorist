@@ -1,0 +1,30 @@
+[
+  {
+    "id": "demo-product",
+    "title": "Placeholder Product",
+    "handle": "placeholder-product",
+    "description": "This is mock product data.",
+    "images": {
+      "edges": [
+        {
+          "node": {
+            "url": "https://via.placeholder.com/300",
+            "altText": "Placeholder image"
+          }
+        }
+      ]
+    },
+    "variants": {
+      "edges": [
+        {
+          "node": {
+            "id": "demo-variant",
+            "price": {
+              "amount": "19.99"
+            }
+          }
+        }
+      ]
+    }
+  }
+]

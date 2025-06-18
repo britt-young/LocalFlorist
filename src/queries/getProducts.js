@@ -1,7 +1,9 @@
-// src/queries/getProducts.js
+//FOR SHOP PAGE TO DISPLAY ALL PRODUCTS
+// This query fetches the first 12 products from the Shopify store, including their ID, title, handle, description, images, and variants with prices.
+
 export const GET_PRODUCTS = `
 {
-  products(first: 10) {
+  products(first: 12) {
     edges {
       node {
         id

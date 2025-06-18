@@ -1,5 +1,3 @@
-import male from "../assets/icons/male-profile.png";
-import female from "../assets/icons/fem-profile.png";
 
 const HomeTestimonials = () => {
   return (

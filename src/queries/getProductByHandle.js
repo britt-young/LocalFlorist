@@ -1,3 +1,5 @@
+// This file contains the GraphQL query to fetch a product by its handle (in shopify)
+
 export const GET_PRODUCT_BY_HANDLE = `
   query getProduct($handle: String!) {
     productByHandle(handle: $handle) {

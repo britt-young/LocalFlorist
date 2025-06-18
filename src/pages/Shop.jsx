@@ -1,34 +1,34 @@
 //MULTIPLE PRODUCTS PAGE
+// USING STATIC REGENERATION This page displays a list of products fetched from a JSON file.
 
-import { useEffect, useState } from 'react'
-import { shopifyClient } from '../lib/shopify'
-import { GET_PRODUCTS } from '../queries/getProducts'
-import { Link } from 'react-router-dom'
+import products from '../data/products.json'; 
+import { Link } from 'react-router-dom';
 
 const Shop = () => {
- const [products, setProducts] = useState([])
-
-  useEffect(() => {
-    shopifyClient.request(GET_PRODUCTS).then((data) => {
-      setProducts(data.products.edges)
-    })
-  }, [])
-
   return (
-    <div className="flex flex-col items-center justify-center py-10 max-w-7xl mx-auto">
-      <h2 className="text-black mb-2">Graze Our Flower Garden</h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-0">
-        {products.map(({ node }) => (
-          <Link to={`/shop/${node.handle}`} key={node.id}>
-            <div className="p-2 text-start">
-              <img className="transition-transform duration-700 hover:scale-102 ease-in-out shadow-md" src={node.images.edges[0]?.node.url} alt={node.title} />
-              <h5 className="text-primary mt-2">{node.title}</h5>
-              <p className="text-primary">${node.variants.edges[0].node.price.amount}</p>
-            </div>
-          </Link>
-        ))}
+    <div className="max-w-7xl mx-auto px-4 py-10">
+      <h1 className="text-2xl font-bold mb-6">Our Flowers</h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        {products.map((product) => {
+          const image = product.images.edges[0]?.node;
+          const variant = product.variants.edges[0]?.node;
+
+          return (
+            <Link to={`/shop/${product.handle}`} key={product.id} className="block bg-white rounded shadow hover:shadow-md transition">
+              <img
+                src={image?.url}
+                alt={image?.altText || product.title}
+                className="w-full h-60 object-cover rounded-t"
+              />
+              <div className="p-4">
+                <h2 className="text-lg font-semibold">{product.title}</h2>
+                <p className="text-gray-600">${variant?.price.amount}</p>
+              </div>
+            </Link>
+          );
+        })}
       </div>
-    </div>    
+    </div>
   );
 };
 

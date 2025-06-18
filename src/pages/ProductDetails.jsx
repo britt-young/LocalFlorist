@@ -1,5 +1,4 @@
 // SINGLE PRODUCT DETAILS PAGE
-
 import { useParams } from 'react-router-dom';
 import Product from '../Components/Product';
 

@@ -24,7 +24,7 @@ const Product = ({ handle }) => {
 
   return (
     <div className="p-4 max-w-3xl mx-auto">
-      <h1 className="text-3xl font-bold mb-4">{product.title}</h1>
+      <h2 className="text-black mb-4">{product.title}</h2>
       <div className="flex gap-6">
         <div className="w-1/2">
           {product.images.edges.length ? (
@@ -35,13 +35,13 @@ const Product = ({ handle }) => {
             />
           ) : (
             <div className="bg-gray-200 h-64 flex items-center justify-center rounded">
-              No Image
+              No Image Available
             </div>
           )}
         </div>
         <div className="w-1/2">
-          <p className="mb-6">{product.description}</p>
-          <h2 className="text-xl font-semibold mb-2">Variants:</h2>
+          <p className="text-primary mb-6">{product.description}</p>
+          <h5 className="text-secondary">Size Options:</h5>
           <ul>
             {product.variants.edges.map(({ node }) => (
               <li key={node.id} className="mb-2">

@@ -17,7 +17,7 @@ const query = `
         title
         handle
         description
-        images(first: 1) {
+        images(first: 4) {
           edges {
             node {
               url

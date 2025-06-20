@@ -1,0 +1,263 @@
+[
+  {
+    "id": "gid://shopify/Product/8451449323691",
+    "title": "Classic Bridal Bouquet",
+    "handle": "classic-bridal-bouquet",
+    "description": "Variety of white bridal florals including, roses, tulips, and orchids",
+    "images": {
+      "edges": [
+        {
+          "node": {
+            "url": "https://cdn.shopify.com/s/files/1/0706/8916/1387/files/shop-bridal.jpg?v=1750170108",
+            "altText": null
+          }
+        }
+      ]
+    },
+    "variants": {
+      "edges": [
+        {
+          "node": {
+            "id": "gid://shopify/ProductVariant/45310263689387",
+            "title": "Default Title",
+            "price": {
+              "amount": "45.0"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "gid://shopify/Product/8451558211755",
+    "title": "Lover's Bouquet",
+    "handle": "lovers-arrangement",
+    "description": "Mix of red and pink roses, fire lilies, and red carnations. Great for valentine's day, anniversaries, and more",
+    "images": {
+      "edges": [
+        {
+          "node": {
+            "url": "https://cdn.shopify.com/s/files/1/0706/8916/1387/files/shop-bouquets.jpg?v=1750181000",
+            "altText": null
+          }
+        }
+      ]
+    },
+    "variants": {
+      "edges": [
+        {
+          "node": {
+            "id": "gid://shopify/ProductVariant/45310738071723",
+            "title": "Default Title",
+            "price": {
+              "amount": "40.0"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "gid://shopify/Product/8451560636587",
+    "title": "Everyday Arrangement",
+    "handle": "everyday-arrangement",
+    "description": "Seasonal florals arranged in a basic vase, great for any occasion or no occasion at all!",
+    "images": {
+      "edges": [
+        {
+          "node": {
+            "url": "https://cdn.shopify.com/s/files/1/0706/8916/1387/files/shop-arrangements_de35b46c-ecef-4591-8ab9-696e74706aad.jpg?v=1750181376",
+            "altText": null
+          }
+        }
+      ]
+    },
+    "variants": {
+      "edges": [
+        {
+          "node": {
+            "id": "gid://shopify/ProductVariant/45310743904427",
+            "title": "Default Title",
+            "price": {
+              "amount": "30.0"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "gid://shopify/Product/8453701697707",
+    "title": "Pink Pony Club Bouquet",
+    "handle": "pink-pony-club-bouquet",
+    "description": "Celebrate the freshness of spring with the Pink Pony Club Bouquet, a vibrant arrangement featuring bright pink blooms that bring energy and elegance to any space. Expertly curated, this floral bouquet combines lively colors and delicate textures to create a stunning centerpiece perfect for welcoming the season. Ideal for brightening your home or gifting to someone special, it captures the essence of spring’s renewal with every petal.",
+    "images": {
+      "edges": [
+        {
+          "node": {
+            "url": "https://cdn.shopify.com/s/files/1/0706/8916/1387/files/shop1.png?v=1750431949",
+            "altText": null
+          }
+        }
+      ]
+    },
+    "variants": {
+      "edges": [
+        {
+          "node": {
+            "id": "gid://shopify/ProductVariant/45322729717931",
+            "title": "Default Title",
+            "price": {
+              "amount": "40.0"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "gid://shopify/Product/8453702418603",
+    "title": "Whimsical Fairy Bouquet",
+    "handle": "whimsical-fairy-bouquet",
+    "description": "The Whimsical Fairy Bouquet showcases a delicate and dainty arrangement in soft pink tones. Expertly designed, this bouquet combines subtle elegance with a gentle color palette, making it perfect for adding a refined touch to any occasion or space. Its graceful composition highlights the beauty of simplicity and charm.",
+    "images": {
+      "edges": [
+        {
+          "node": {
+            "url": "https://cdn.shopify.com/s/files/1/0706/8916/1387/files/shop2.png?v=1750432269",
+            "altText": null
+          }
+        }
+      ]
+    },
+    "variants": {
+      "edges": [
+        {
+          "node": {
+            "id": "gid://shopify/ProductVariant/45322732863659",
+            "title": "Default Title",
+            "price": {
+              "amount": "35.0"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "gid://shopify/Product/8453703106731",
+    "title": "Spring Wildflower Bouquet",
+    "handle": "spring-wildflower-bouquet",
+    "description": "Celebrate the freshness of spring with our Spring Wildflower Bouquet, thoughtfully arranged to highlight the natural beauty of organic design. This bouquet features a delicate mix of wildflowers in soft pastel hues, evoking the gentle charm of a blooming meadow. Perfect for adding a touch of seasonal elegance to any space, it brings a serene and authentic floral experience that reflects the effortless grace of nature. Ideal for those who appreciate expert craftsmanship and the subtle allure of spring’s finest blossoms.",
+    "images": {
+      "edges": [
+        {
+          "node": {
+            "url": "https://cdn.shopify.com/s/files/1/0706/8916/1387/files/shop3.png?v=1750432477",
+            "altText": null
+          }
+        }
+      ]
+    },
+    "variants": {
+      "edges": [
+        {
+          "node": {
+            "id": "gid://shopify/ProductVariant/45322734436523",
+            "title": "Default Title",
+            "price": {
+              "amount": "45.0"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "gid://shopify/Product/8453703827627",
+    "title": "Dark Romance Bouqet",
+    "handle": "dark-romance-bouqet",
+    "description": "Immerse yourself in the timeless allure of the Dark Romance Bouquet. Featuring dark, deep red rose blooms, this classic arrangement evokes a profound sense of romance and sophistication. Perfect for expressing enduring love, its rich hues and elegant design make it an expert choice for intimate moments and refined settings.",
+    "images": {
+      "edges": [
+        {
+          "node": {
+            "url": "https://cdn.shopify.com/s/files/1/0706/8916/1387/files/shop4.png?v=1750432617",
+            "altText": null
+          }
+        }
+      ]
+    },
+    "variants": {
+      "edges": [
+        {
+          "node": {
+            "id": "gid://shopify/ProductVariant/45322737811627",
+            "title": "Default Title",
+            "price": {
+              "amount": "35.0"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "gid://shopify/Product/8453704220843",
+    "title": "Firecracker Bouquet",
+    "handle": "firecracker-bouquet",
+    "description": "The Firecracker Bouquet features an elegant arrangement of red and white roses crafted into an organic shape, creating a dynamic and natural flow. This expert design highlights the vibrant contrast between the deep red and pristine white blooms, making it a striking centerpiece for any occasion. Perfect for expressing passion and purity simultaneously, this bouquet combines classic beauty with contemporary artistry.",
+    "images": {
+      "edges": [
+        {
+          "node": {
+            "url": "https://cdn.shopify.com/s/files/1/0706/8916/1387/files/shop5.png?v=1750432762",
+            "altText": null
+          }
+        }
+      ]
+    },
+    "variants": {
+      "edges": [
+        {
+          "node": {
+            "id": "gid://shopify/ProductVariant/45322740400299",
+            "title": "Default Title",
+            "price": {
+              "amount": "40.0"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "gid://shopify/Product/8453704548523",
+    "title": "Fall Florals Bouquet",
+    "handle": "fall-florals-bouquet",
+    "description": "Celebrate the subtle beauty of autumn with the Fall Florals Bouquet. This expertly arranged collection features soft orange hues and delicate fall florals, creating a refined and understated seasonal display. Perfect for adding a touch of warmth and elegance to any space, its muted colors evoke the gentle transition of fall, making it an ideal choice for sophisticated seasonal décor.",
+    "images": {
+      "edges": [
+        {
+          "node": {
+            "url": "https://cdn.shopify.com/s/files/1/0706/8916/1387/files/shop6.png?v=1750432887",
+            "altText": null
+          }
+        }
+      ]
+    },
+    "variants": {
+      "edges": [
+        {
+          "node": {
+            "id": "gid://shopify/ProductVariant/45322741383339",
+            "title": "Default Title",
+            "price": {
+              "amount": "35.0"
+            }
+          }
+        }
+      ]
+    }
+  }
+]

@@ -29,7 +29,9 @@ const Shop = () => {
                 />
                 <div className="p-4">
                   <h5 className="text-black">{product.title}</h5>
-                  <p className="text-primary">${variant?.price.amount}</p>
+                  <p className="text-primary">
+                    ${Number(variant?.price.amount).toFixed(2)}
+                  </p>
                 </div>
               </Link>
             );

@@ -27,9 +27,9 @@ const Shop = () => {
                   alt={image?.altText || product.title}
                   className="w-80 object-cover shadow-md"
                 />
-                <div className="pt-2 text-start">
+                <div className="mt-2 text-start">
                   <h5 className="text-black">{product.title}</h5>
-                  <p className="text-primary pt-2">
+                  <p className="text-primary mt-0 mb-2">
                     ${Number(variant?.price.amount).toFixed(2)}
                   </p>
                 </div>

@@ -11,7 +11,7 @@ const Shop = () => {
       <ShopHero />
       <div className="max-w-7xl mx-auto px-4 py-10 flex flex-col items-center">
         <h2 className="text-black mb-6">Pick From Our Garden</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
           {products.map((product) => {
             const image = product.images.edges[0]?.node;
             const variant = product.variants.edges[0]?.node;
@@ -20,16 +20,16 @@ const Shop = () => {
               <Link
                 to={`/shop/${product.handle}`}
                 key={product.id}
-                className="transition-transform duration-700 hover:scale-105 ease-in-out shadow-md"
+                className="transition-transform duration-700 hover:scale-105 ease-in-out"
               >
                 <img
                   src={image?.url}
                   alt={image?.altText || product.title}
-                  className="w-80 object-cover"
+                  className="w-80 object-cover shadow-md"
                 />
-                <div className="p-4">
+                <div className="pt-2 text-start">
                   <h5 className="text-black">{product.title}</h5>
-                  <p className="text-primary">
+                  <p className="text-primary pt-2">
                     ${Number(variant?.price.amount).toFixed(2)}
                   </p>
                 </div>

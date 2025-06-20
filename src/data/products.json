@@ -21,7 +21,7 @@
             "id": "gid://shopify/ProductVariant/45310263689387",
             "title": "Default Title",
             "price": {
-              "amount": "45.0"
+              "amount": "45.00"
             }
           }
         }
@@ -50,7 +50,7 @@
             "id": "gid://shopify/ProductVariant/45310738071723",
             "title": "Default Title",
             "price": {
-              "amount": "40.0"
+              "amount": "40.00"
             }
           }
         }
@@ -79,7 +79,7 @@
             "id": "gid://shopify/ProductVariant/45310743904427",
             "title": "Default Title",
             "price": {
-              "amount": "30.0"
+              "amount": "30.00"
             }
           }
         }

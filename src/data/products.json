@@ -3,7 +3,7 @@
     "id": "gid://shopify/Product/8451449323691",
     "title": "Classic Bridal Bouquet",
     "handle": "classic-bridal-bouquet",
-    "description": "Variety of white bridal florals including, roses, tulips, and orchids",
+    "description": "This Classic Bridal Bouquet features an elegant blend of white roses, tulips, and orchids, expertly arranged to create a timeless and sophisticated floral statement. Perfect for brides seeking a refined and graceful look, this bouquet combines delicate textures and pristine blooms to complement any wedding style with understated beauty.",
     "images": {
       "edges": [
         {
@@ -32,7 +32,7 @@
     "id": "gid://shopify/Product/8451558211755",
     "title": "Lover's Bouquet",
     "handle": "lovers-arrangement",
-    "description": "Mix of red and pink roses, fire lilies, and red carnations. Great for valentine's day, anniversaries, and more",
+    "description": "Celebrate love with the Lover's Bouquet, featuring a sophisticated blend of red and pink roses, fiery lilies, and vibrant red carnations. This expertly arranged bouquet offers a rich palette of colors and textures, perfect for expressing passion and affection on Valentine’s Day, anniversaries, or any special occasion. Its elegant composition ensures a lasting impression, making it an ideal choice for those seeking a refined floral gift.",
     "images": {
       "edges": [
         {
@@ -61,7 +61,7 @@
     "id": "gid://shopify/Product/8451560636587",
     "title": "Everyday Arrangement",
     "handle": "everyday-arrangement",
-    "description": "Seasonal florals arranged in a basic vase, great for any occasion or no occasion at all!",
+    "description": "Seasonal florals thoughtfully arranged in a simple vase, the Everyday Arrangement offers versatile elegance suitable for any occasion or to brighten your space spontaneously. Expertly selected blooms ensure freshness and visual appeal, making it an effortless choice for gifting or personal enjoyment.",
     "images": {
       "edges": [
         {
@@ -98,6 +98,12 @@
             "url": "https://cdn.shopify.com/s/files/1/0706/8916/1387/files/shop1.png?v=1750431949",
             "altText": null
           }
+        },
+        {
+          "node": {
+            "url": "https://cdn.shopify.com/s/files/1/0706/8916/1387/files/shop1_a64696e5-448c-43ab-8d8d-5d652516a91a.png?v=1750432078",
+            "altText": null
+          }
         }
       ]
     },
@@ -125,6 +131,12 @@
         {
           "node": {
             "url": "https://cdn.shopify.com/s/files/1/0706/8916/1387/files/shop2.png?v=1750432269",
+            "altText": null
+          }
+        },
+        {
+          "node": {
+            "url": "https://cdn.shopify.com/s/files/1/0706/8916/1387/files/shop2_3aef8318-ddba-4ea8-8b32-9ecfff00d5a5.png?v=1750432277",
             "altText": null
           }
         }
@@ -241,6 +253,12 @@
         {
           "node": {
             "url": "https://cdn.shopify.com/s/files/1/0706/8916/1387/files/shop6.png?v=1750432887",
+            "altText": null
+          }
+        },
+        {
+          "node": {
+            "url": "https://cdn.shopify.com/s/files/1/0706/8916/1387/files/shop6_0d920805-2cd1-4f2c-9a34-e0d17a897f5c.png?v=1750432893",
             "altText": null
           }
         }

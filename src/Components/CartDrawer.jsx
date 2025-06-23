@@ -3,32 +3,31 @@ import { CartContext } from "../context/cartContext";
 import basket from "../assets/icons/basket.png";
 
 const CartDrawer = () => {
-  const { cart } = useContext(CartContext);
+  const { cart, updateCartItem, removeCartItem } = useContext(CartContext);
   const [isOpen, setIsOpen] = useState(false);
 
-  // Open/close toggle function
   const toggleDrawer = () => setIsOpen(!isOpen);
 
   return (
     <>
-      {/* Button to open cart */}
+      {/* Cart toggle button */}
       <button
         onClick={toggleDrawer}
         className="fixed lg:top-10 top-12 right-0 z-50 bg-primary text-white px-4 py-2 pr-10"
       >
-        <img src={basket} className="inline-block pe-1 cursor-pointer"></img> (
-        {cart?.lines.edges.length || 0})
+        <img src={basket} className="inline-block pe-1 cursor-pointer" />
+        ({cart?.lines?.edges?.length || 0})
       </button>
 
-      {/* Drawer overlay */}
+      {/* Overlay */}
       {isOpen && (
         <div
           onClick={toggleDrawer}
-          className="fixed inset-0 bg-transparent z-40"
+          className="fixed inset-0 bg-black/10 z-40"
         />
       )}
 
-      {/* Drawer panel */}
+      {/* Drawer */}
       <div
         className={`fixed top-0 right-0 h-full w-80 bg-tertiary shadow-lg z-50 transform transition-transform duration-300 ease-in-out
           ${isOpen ? "translate-x-0" : "translate-x-full"}`}
@@ -43,37 +42,61 @@ const CartDrawer = () => {
 
           <h3 className="text-black mb-4">Your basket:</h3>
 
-          {/* Cart lines */}
           <div className="flex-grow overflow-y-auto">
             {!cart || cart.lines.edges.length === 0 ? (
               <p>Your cart is empty.</p>
             ) : (
               <ul>
-                {cart.lines.edges.map(({ node }) => {
-                  const product = node.merchandise.product;
+                {cart.lines.edges.map(({ node: line }) => {
+                  const product = line.merchandise.product;
+                  const variant = line.merchandise;
                   const image = product.featuredImage?.url;
 
                   return (
                     <li
-                      key={node.id}
+                      key={line.id}
                       className="mb-4 border-b pb-4 flex justify-between items-start gap-4"
                     >
                       <div className="flex-1">
                         <div className="font-semibold">{product.title}</div>
                         {/* <div className="text-sm text-gray-600">
-                          Variant: {node.merchandise.title}
+                          Variant: {variant.title}
                         </div> */}
-                        <div className="text-sm">Quantity: {node.quantity}</div>
-                        <div className="text-sm font-medium text-primary">
-                          ${Number(node.merchandise.price.amount).toFixed(2)}
+                        <div className="text-sm font-medium text-primary mt-1">
+                          ${Number(variant.price.amount).toFixed(2)}
                         </div>
+
+                        {/* Quantity controls */}
+                        <div className="flex items-center gap-2 mt-2 cursor-pointer">Quantity:
+                          <button
+                            onClick={() => updateCartItem(line.id, line.quantity - 1)}
+                            disabled={line.quantity <= 1}
+                            className="px-2 py-1 bg-gray-200 rounded"
+                          >
+                            −
+                          </button>
+                          <span>{line.quantity}</span>
+                          <button
+                            onClick={() => updateCartItem(line.id, line.quantity + 1)}
+                            className="px-2 py-1 bg-gray-200 rounded cursor-pointer"
+                          >
+                            +
+                          </button>
+                        </div>
+
+                        <button
+                          onClick={() => removeCartItem(line.id)}
+                          className="text-sm text-red-500 mt-2 cursor-pointer"
+                        >
+                          Remove
+                        </button>
                       </div>
 
                       {image && (
                         <img
                           src={image}
                           alt={product.title}
-                          className="w-20 max-h-full object-cover shadow"
+                          className="w-20 h-20 object-cover rounded shadow"
                         />
                       )}
                     </li>

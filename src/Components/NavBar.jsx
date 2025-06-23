@@ -61,19 +61,19 @@ const NavBar = () => {
       <div className={`lg:hidden ${isMenuOpen ? "block" : "hidden"}`}>
         <ul className="flex flex-col items-center space-y-4 px-4 py-2">
           <li>
-            <NavLink to="/">Page 1</NavLink>
+            <NavLink to="/">Home</NavLink>
           </li>
           <li>
-            <NavLink to="/page2">Page 2</NavLink>
+            <NavLink to="/about">About</NavLink>
           </li>
           <li>
-            <NavLink to="/page3">Page 3</NavLink>
+            <NavLink to="/shop">Shop</NavLink>
           </li>
           <li>
-            <NavLink to="/page4">Page 4</NavLink>
+            <NavLink to="/faqs">FAQs</NavLink>
           </li>
           <li>
-            <NavLink to="/page5">Page 5</NavLink>
+            <NavLink to="/contact">Contact Us</NavLink>
           </li>
         </ul>
 

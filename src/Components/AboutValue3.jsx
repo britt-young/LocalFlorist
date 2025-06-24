@@ -7,7 +7,7 @@ const AboutValue3 = () => {
     <div className="md:h-[500px] flex flex-col justify-center items-center bg-secondary">
       <img
               src={background}
-              className="absolute min-h-125 object-cover opacity-10"
+              className="absolute min-h-125 object-cover opacity-5"
             />
       <div className="max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-4 m-5 lg:m-0">
         <div className="flex justify-start">

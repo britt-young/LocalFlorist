@@ -33,7 +33,7 @@ const HomeProducts = () => {
 
       <Link
         to="/shop"
-        className="shadow-md py-2 m-10 inline-block border-2 border-primary bg-tertiary px-6 pb-[6px] pt-2 text-sm font-medium leading-normal text-primary hover:bg-primary hover:text-tertiary"
+        className="shadow-md py-2 m-10 inline-block border-2 border-primary bg-tertiary px-6 pb-[6px] pt-2 text-sm font-medium leading-normal text-primary hover:bg-primary hover:text-tertiary transition-colors duration-300"
       >
         Shop Best Sellers
       </Link>

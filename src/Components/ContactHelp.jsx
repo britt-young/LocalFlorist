@@ -27,7 +27,6 @@ const ContactHelp = () => {
           </div>
         </div>
         {/* Card 2 */}
-
         <div className="bg-primary p-4 shadow-md transition-transform duration-700 hover:scale-105 ease-in-out ">
           <img
             src={message}
@@ -35,7 +34,7 @@ const ContactHelp = () => {
             className="w-16 h-16 mx-auto mb-4"
           />
           <div className="w-fit text-center mx-auto">
-            <h3 className="mb-0">Send us an email</h3>
+            <h3 className="mb-0">Message Support</h3>
             <a href={`mailto:${email}`}>
               <p className="cursor-pointer mb-0">{email}</p>
             </a>
@@ -55,6 +54,9 @@ const ContactHelp = () => {
           </div>
         </div>
       </div>
+      <button className="flex mx-auto shadow-md py-2 m-10 border-2 border-primary bg-tertiary px-6 pb-[6px] pt-2 text-sm font-medium leading-normal text-primary hover:bg-primary hover:text-tertiary transition-colors duration-300">
+        <Link to="/faqs">Visit our FAQs page</Link>
+      </button>
     </div>
   );
 };

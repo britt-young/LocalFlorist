@@ -1,9 +1,14 @@
 import value3 from "../assets/imgs/value3.jpg";
-import delivery from "../assets/icons/delivery.png";
+import background from "../assets/imgs/value3bg.svg";
+// import delivery from "../assets/icons/delivery.png";
 
 const AboutValue3 = () => {
   return (
     <div className="md:h-[500px] flex flex-col justify-center items-center bg-secondary">
+      <img
+              src={background}
+              className="absolute min-h-125 object-cover opacity-10"
+            />
       <div className="max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-4 m-5 lg:m-0">
         <div className="flex justify-start">
           <img
@@ -16,13 +21,11 @@ const AboutValue3 = () => {
         </div>
         <div className="flex flex-col justify-center items-start text-left">
           <span className="inline-flex items-baseline mb-2">
-            <img
+            {/* <img
               src={delivery}
               className="me-4 size-10 self-center rounded-full"
-            />
-            <span>
+            /> */}
               <h2 className="text-black">Special-care Delivery</h2>
-            </span>
           </span>
           <p className="text-primary">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

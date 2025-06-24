@@ -13,7 +13,7 @@ const NavBar = () => {
       <nav className="flex items-center justify-end">
         {/* Mobile menu toggle */}
         <button
-          className="lg:hidden p-2"
+          className="lg:hidden p-2 cursor-pointer"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           <svg
@@ -78,12 +78,12 @@ const NavBar = () => {
         </ul>
 
         {/* Sign Up Button (Mobile) */}
-        <button
+        {/* <button
           className="flex justify-center w-full py-2 text-white bg-primary"
-          onClick={() => navigate("/page5")}
+          onClick={() => navigate("/contact")}
         >
           Sign Up
-        </button>
+        </button> */}
       </div>
     </div>
   );

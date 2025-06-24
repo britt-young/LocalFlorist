@@ -12,11 +12,15 @@ const AboutValues = () => {
           everything we do.
         </h3>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-5 max-w-7xl">
+      <div
+        data-aos="zoom-in"
+        data-aos-duration="2000"
+        className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-5 max-w-7xl"
+      >
         {/* Value 1 */}
-        <div className="text-center bg-tertiary px-4 pb-5 shadow-md items-center justify-center flex flex-col">
+        <div className="text-center bg-tertiary px-4 pb-5 shadow-md items-center justify-center flex flex-col transition-transform duration-700 hover:scale-105 ease-in-out">
           <div className="flex m-5 w-15 h-15 bg-primary/80 rounded-full shadow-md">
-            <img src={bouquet} alt="flower bouquet icon" className="w-full"/>
+            <img src={bouquet} alt="flower bouquet icon" className="w-full" />
           </div>
           <h4 className="text-primary">Fresh Florals</h4>
           <p className="text-gray-600">
@@ -24,9 +28,9 @@ const AboutValues = () => {
           </p>
         </div>
         {/* Value 2 */}
-        <div className="text-center bg-tertiary px-4 pb-5 shadow-md items-center justify-center flex flex-col">
-            <div className="flex m-5 w-15 h-15 bg-primary/80 rounded-full shadow-md">
-            <img src={price} alt="flower bouquet icon" className="w-full"/>
+        <div className="text-center bg-tertiary px-4 pb-5 shadow-md items-center justify-center flex flex-col transition-transform duration-700 hover:scale-105 ease-in-out">
+          <div className="flex m-5 w-15 h-15 bg-primary/80 rounded-full shadow-md">
+            <img src={price} alt="flower bouquet icon" className="w-full" />
           </div>
           <h4 className="text-primary">Responsibly Priced</h4>
           <p className="text-gray-600">
@@ -34,9 +38,9 @@ const AboutValues = () => {
           </p>
         </div>
         {/* Value 3 */}
-        <div className="text-center bg-tertiary px-4 pb-5 shadow-md items-center justify-center flex flex-col">
-            <div className="flex m-5 w-15 h-15 bg-primary/80 rounded-full shadow-md">
-            <img src={delivery} alt="flower bouquet icon" className="w-full"/>
+        <div className="text-center bg-tertiary px-4 pb-5 shadow-md items-center justify-center flex flex-col transition-transform duration-700 hover:scale-105 ease-in-out">
+          <div className="flex m-5 w-15 h-15 bg-primary/80 rounded-full shadow-md">
+            <img src={delivery} alt="flower bouquet icon" className="w-full" />
           </div>
           <h4 className="text-primary">Handled with Care</h4>
           <p className="text-gray-600">

@@ -8,7 +8,7 @@ const HomeTestimonials = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mx-5 lg:mx-60">
         {/* Review Card */}
-        <div className="text-start bg-tertiary p-10 shadow-md items-center flex flex-col">
+        <div className="text-start bg-tertiary p-10 shadow-md items-center flex flex-col transition-transform duration-700 hover:scale-105 ease-in-out">
           <h4 className="text-primary mb-1">"Truly customizable"</h4>
           {/* Rating */}
           <ul className="mb-5 flex items-center justify-center">
@@ -91,7 +91,7 @@ const HomeTestimonials = () => {
           </p>
         </div>
         {/* Review Card  */}
-        <div className="text-center bg-tertiary p-10 shadow-md items-center flex flex-col">
+        <div className="text-center bg-tertiary p-10 shadow-md items-center flex flex-col transition-transform duration-700 hover:scale-105 ease-in-out">
           <h4 className="text-primary mb-1">"Best gift for mom!"</h4>
           {/* Rating */}
           <ul className="mb-5 flex items-center justify-center">
@@ -172,7 +172,7 @@ const HomeTestimonials = () => {
           </p>
         </div>
         {/* Review Card  */}
-        <div className="text-center bg-tertiary p-10 shadow-md items-center flex flex-col">
+        <div className="text-center bg-tertiary p-10 shadow-md items-center flex flex-col transition-transform duration-700 hover:scale-105 ease-in-out">
           <h4 className="text-primary mb-1">"Special event delivery"</h4>
           {/* Rating */}
           <ul className="mb-5 flex items-center justify-center">
@@ -255,7 +255,7 @@ const HomeTestimonials = () => {
           </p>
         </div>
         {/* Review Card  */}
-        <div className="text-center bg-tertiary p-10 shadow-md items-center flex flex-col">
+        <div className="text-center bg-tertiary p-10 shadow-md items-center flex flex-col transition-transform duration-700 hover:scale-105 ease-in-out">
           <h4 className="text-primary mb-1">
             "Quick & easy same day pick-up!"
           </h4>

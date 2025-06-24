@@ -1,7 +1,9 @@
 import support from "../assets/icons/support.png";
 import message from "../assets/icons/message.png";
 import store from "../assets/icons/store.png";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
+
+const email = "GulfCoastWDD" + "@" + "protonmail.com";
 
 const ContactHelp = () => {
   return (
@@ -11,7 +13,7 @@ const ContactHelp = () => {
       </h2>
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {/* Card 1 */}
-        <div className="bg-primary p-4 shadow-md">
+        <div className="bg-primary p-4 shadow-md transition-transform duration-700 hover:scale-105 ease-in-out">
           <img
             src={support}
             alt="Support Icon"
@@ -25,7 +27,8 @@ const ContactHelp = () => {
           </div>
         </div>
         {/* Card 2 */}
-        <div className="bg-primary p-4 shadow-md">
+
+        <div className="bg-primary p-4 shadow-md transition-transform duration-700 hover:scale-105 ease-in-out ">
           <img
             src={message}
             alt="Message Icon"
@@ -33,11 +36,14 @@ const ContactHelp = () => {
           />
           <div className="w-fit text-center mx-auto">
             <h3 className="mb-0">Send us an email</h3>
-            <p className="mb-0">info@example.com</p>
+            <a href={`mailto:${email}`}>
+              <p className="cursor-pointer mb-0">{email}</p>
+            </a>
           </div>
         </div>
+
         {/* Card 3 */}
-        <div className="bg-primary p-4 shadow-md">
+        <div className="bg-primary p-4 shadow-md transition-transform duration-700 hover:scale-105 ease-in-out">
           <img
             src={store}
             alt="Store Icon"

@@ -13,7 +13,7 @@ const AboutTestimonials = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-7xl mx-5 lg:mx-0">
         {/* Review Card */}
-        <div className="text-center bg-tertiary px-5 pb-10 shadow-md items-center flex flex-col">
+        <div className="text-center bg-tertiary px-5 pb-10 shadow-md items-center flex flex-col transition-transform duration-700 hover:scale-105 ease-in-out">
           <div className="flex mt-5 mb-1 w-15 h-15 rounded-full shadow-md">
             <img src={male} alt="profile image" className="w-full" />
           </div>
@@ -98,7 +98,7 @@ const AboutTestimonials = () => {
           </p>
         </div>
         {/* Review Card  */}
-        <div className="text-center bg-tertiary px-5 pb-10 shadow-md items-center flex flex-col">
+        <div className="text-center bg-tertiary px-5 pb-10 shadow-md items-center flex flex-col transition-transform duration-700 hover:scale-105 ease-in-out">
           <div className="flex mt-5 mb-1 w-15 h-15 rounded-full shadow-md">
             <img src={female} alt="profile image" className="w-full" />
           </div>
@@ -182,7 +182,7 @@ const AboutTestimonials = () => {
           </p>
         </div>
         {/* Review Card  */}
-        <div className="text-center bg-tertiary px-5 pb-10 shadow-md items-center flex flex-col">
+        <div className="text-center bg-tertiary px-5 pb-10 shadow-md items-center flex flex-col transition-transform duration-700 hover:scale-105 ease-in-out">
           <div className="flex mt-5 mb-1 w-15 h-15 rounded-full shadow-md">
             <img src={female} alt="profile image" className="w-full" />
           </div>

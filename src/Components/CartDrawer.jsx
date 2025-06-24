@@ -13,9 +13,9 @@ const CartDrawer = () => {
       {/* Cart toggle button */}
       <button
         onClick={toggleDrawer}
-        className="fixed lg:top-10 top-12 right-0 z-50 bg-primary text-white px-4 py-2 pr-10"
+        className="fixed lg:top-10 top-12 right-0 z-50 bg-primary text-white px-4 py-2 pr-10 cursor-pointer"
       >
-        <img src={basket} className="inline-block pe-1 cursor-pointer" />
+        <img src={basket} className="inline-block pe-1" />
         ({cart?.lines?.edges?.length || 0})
       </button>
 
@@ -42,9 +42,9 @@ const CartDrawer = () => {
 
           <h3 className="text-black mb-4">Your basket:</h3>
 
-          <div className="flex-grow overflow-y-auto">
+          <div className="flex-grow overflow-y-auto ">
             {!cart || cart.lines.edges.length === 0 ? (
-              <p>Your cart is empty.</p>
+              <p className="text-black">There are no items in your basket</p>
             ) : (
               <ul>
                 {cart.lines.edges.map(({ node: line }) => {

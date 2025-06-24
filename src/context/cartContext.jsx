@@ -127,66 +127,137 @@ export const CartProvider = ({ children }) => {
     });
   };
 
+  // Update cart item quantity with optimistic UI
+  async function updateCartItem(lineId, quantity) {
+  const mutation = `
+    mutation cartLinesUpdate($cartId: ID!, $lines: [CartLineUpdateInput!]!) {
+      cartLinesUpdate(cartId: $cartId, lines: $lines) {
+        cart {
+          id
+          lines(first: 50) {
+            edges {
+              node {
+                id
+                quantity
+                merchandise {
+                  ... on ProductVariant {
+                    id
+                    title
+                    price {
+                      amount
+                    }
+                    product {
+                      title
+                      featuredImage {
+                        url
+                        altText
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        userErrors {
+          field
+          message
+        }
+      }
+    }
+  `;
+
+  const res = await fetch(`https://${SHOPIFY_DOMAIN}/api/2023-04/graphql.json`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "X-Shopify-Storefront-Access-Token": SHOPIFY_STOREFRONT_TOKEN,
+    },
+    body: JSON.stringify({
+      query: mutation,
+      variables: {
+        cartId,
+        lines: [{ id: lineId, quantity }],
+      },
+    }),
+  });
+
+  const json = await res.json();
+
+  if (json.data?.cartLinesUpdate?.userErrors?.length > 0) {
+    console.error("Shopify errors:", json.data.cartLinesUpdate.userErrors);
+  }
+
+  const updatedCart = json.data?.cartLinesUpdate?.cart;
+
+  if (!updatedCart) {
+    console.error("Failed to update cart", json.errors || json);
+    return;
+  }
+
+  setCart(updatedCart);
+}
+
+
+
   // Add to cart with optimistic UI update
   const addToCart = useCallback(async (variantId, quantity = 1) => {
-    // Optimistic: add or update line locally
-    updateCartStateOptimistic((prevCart) => {
-      const edges = prevCart.lines.edges.slice();
-      const lineIndex = edges.findIndex(edge => edge.node.merchandise.id === variantId);
+  // Find if the variant already exists in the cart
+  const existingLine = cart?.lines?.edges.find(
+    (edge) => edge.node.merchandise.id === variantId
+  );
 
-      if (lineIndex > -1) {
-        // Update existing quantity
-        const line = edges[lineIndex].node;
-        edges[lineIndex] = {
-          ...edges[lineIndex],
-          node: { ...line, quantity: line.quantity + quantity },
-        };
-      } else {
-        // Add new line placeholder (id is unknown yet, so use a temp id)
-        edges.push({
-          node: {
-            id: `temp-${variantId}-${Date.now()}`,
-            quantity,
-            merchandise: {
-              id: variantId,
-              title: "",
-              price: { amount: 0 },
-              product: { title: "", featuredImage: null },
-            },
-          },
-        });
-      }
+  if (existingLine) {
+    // Instead of adding, update existing quantity
+    const newQuantity = existingLine.node.quantity + quantity;
+    return updateCartItem(existingLine.node.id, newQuantity);
+  }
 
-      return {
-        ...prevCart,
-        lines: {
-          ...prevCart.lines,
-          edges,
+  // Optimistically add new line
+  updateCartStateOptimistic((prevCart) => {
+    const edges = [...(prevCart?.lines?.edges || [])];
+    edges.push({
+      node: {
+        id: `temp-${variantId}-${Date.now()}`,
+        quantity,
+        merchandise: {
+          id: variantId,
+          title: "",
+          price: { amount: 0 },
+          product: { title: "", featuredImage: null },
         },
-      };
+      },
     });
 
-    // Send request to Shopify
-    const mutation = `
-      mutation cartLinesAdd($cartId: ID!, $lines: [CartLineInput!]!) {
-        cartLinesAdd(cartId: $cartId, lines: $lines) {
-          cart {
-            id
-            checkoutUrl
-            lines(first: 50) {
-              edges {
-                node {
-                  id
-                  quantity
-                  merchandise {
-                    ... on ProductVariant {
-                      id
+    return {
+      ...prevCart,
+      lines: {
+        ...prevCart.lines,
+        edges,
+      },
+    };
+  });
+
+  // Send add-to-cart request
+  const mutation = `
+    mutation cartLinesAdd($cartId: ID!, $lines: [CartLineInput!]!) {
+      cartLinesAdd(cartId: $cartId, lines: $lines) {
+        cart {
+          id
+          checkoutUrl
+          lines(first: 50) {
+            edges {
+              node {
+                id
+                quantity
+                merchandise {
+                  ... on ProductVariant {
+                    id
+                    title
+                    price { amount }
+                    product {
                       title
-                      price { amount }
-                      product {
-                        title
-                        featuredImage { url altText }
-                      }
+                      featuredImage { url altText }
                     }
                   }
                 }
@@ -195,102 +266,36 @@ export const CartProvider = ({ children }) => {
           }
         }
       }
-    `;
-
-    try {
-      const res = await fetch(`https://${SHOPIFY_DOMAIN}/api/2023-04/graphql.json`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "X-Shopify-Storefront-Access-Token": SHOPIFY_STOREFRONT_TOKEN,
-        },
-        body: JSON.stringify({
-          query: mutation,
-          variables: {
-            cartId,
-            lines: [{ quantity, merchandiseId: variantId }],
-          },
-        }),
-      });
-      const json = await res.json();
-      const updatedCart = json.data?.cartLinesAdd?.cart;
-
-      if (!updatedCart) throw new Error("Failed to add to cart");
-
-      setCart(updatedCart);
-    } catch (error) {
-      console.error(error);
-      // Optionally rollback optimistic update here by refetching cart
-      fetchCart(cartId);
     }
-  }, [cartId, fetchCart]);
+  `;
 
-  // Update cart item quantity with optimistic UI
-  const updateCartItem = useCallback(async (lineId, quantity) => {
-    // Optimistic update
-    updateCartStateOptimistic((prevCart) => {
-      const edges = prevCart.lines.edges.map(edge =>
-        edge.node.id === lineId ? { ...edge, node: { ...edge.node, quantity } } : edge
-      );
-      return {
-        ...prevCart,
-        lines: { ...prevCart.lines, edges },
-      };
+  try {
+    const res = await fetch(`https://${SHOPIFY_DOMAIN}/api/2023-04/graphql.json`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "X-Shopify-Storefront-Access-Token": SHOPIFY_STOREFRONT_TOKEN,
+      },
+      body: JSON.stringify({
+        query: mutation,
+        variables: {
+          cartId,
+          lines: [{ quantity, merchandiseId: variantId }],
+        },
+      }),
     });
 
-    const mutation = `
-      mutation cartLinesUpdate($cartId: ID!, $lines: [CartLineUpdateInput!]!) {
-        cartLinesUpdate(cartId: $cartId, lines: $lines) {
-          cart {
-            id
-            checkoutUrl
-            lines(first: 50) {
-              edges {
-                node {
-                  id
-                  quantity
-                  merchandise {
-                    ... on ProductVariant {
-                      id
-                      title
-                      price { amount }
-                      product {
-                        title
-                        featuredImage { url altText }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    `;
+    const json = await res.json();
+    const updatedCart = json.data?.cartLinesAdd?.cart;
 
-    try {
-      const res = await fetch(`https://${SHOPIFY_DOMAIN}/api/2023-04/graphql.json`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "X-Shopify-Storefront-Access-Token": SHOPIFY_STOREFRONT_TOKEN,
-        },
-        body: JSON.stringify({
-          query: mutation,
-          variables: { cartId, lines: [{ id: lineId, quantity }] },
-        }),
-      });
-      const json = await res.json();
-      const updatedCart = json.data?.cartLinesUpdate?.cart;
+    if (!updatedCart) throw new Error("Failed to add to cart");
 
-      if (!updatedCart) throw new Error("Failed to update cart item");
-
-      setCart(updatedCart);
-    } catch (error) {
-      console.error(error);
-      fetchCart(cartId);
-    }
-  }, [cartId, fetchCart]);
+    setCart(updatedCart);
+  } catch (error) {
+    console.error(error);
+    fetchCart(cartId); // rollback
+  }
+}, [cart, cartId, fetchCart, updateCartItem]);
 
   // Remove item with optimistic UI
   const removeCartItem = useCallback(async (lineId) => {
@@ -357,6 +362,7 @@ export const CartProvider = ({ children }) => {
     }
   }, [cartId, fetchCart]);
 
+// --------------------------------------------------------------------------------------------//
   return (
     <CartContext.Provider value={{ cart, addToCart, updateCartItem, removeCartItem }}>
       {children}

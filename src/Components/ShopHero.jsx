@@ -10,13 +10,8 @@ const ShopHero = () => {
             <div className="flex flex-col items-center text-center justify-center h-full w-full text-tertiary">
               <div className="bg-transparent backdrop-blur-sm p-4 mx-10 lg:mx-0">
                 <h1>Valentine's Day Sale Happening Now</h1>
-                <h3 className="mb-4">Shop in the name of LOVE! </h3>
-                <Link
-                  to="/shop"
-                  className="py-2 inline-block border-2 border-[#BA8F99] bg-[#BA8F99] px-6 pb-[6px] pt-2 text-xs font-medium leading-normal text-tertiary hover:bg-tertiary hover:text-[#BA8F99]"
-                >
-                  Shop Sale
-                </Link>
+                <h3 className="mb-4">15% off all red & pink arrangements </h3>
+                
               </div>
             </div>
           </div>

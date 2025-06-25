@@ -30,10 +30,10 @@ const Product = () => {
         </div>
         <div className="my-5 w-1/3">
           <h2 className="text-black mb-4">{product.title}</h2>
-          <h5 className="text-secondary font-semibold">Size Options:</h5>
-          <ul>
+          <h5 className="text-secondary font-semibold mb-3">Size Options:</h5>
+          <ul className="mb-6">
             {product.variants.edges.map(({ node }) => (
-              <li key={node.id} className="mb-2">
+              <li key={node.id} className="mb-0">
                 {node.title} — ${Number(node.price.amount).toFixed(2)} USD
               </li>
             ))}

@@ -18,10 +18,19 @@
       "edges": [
         {
           "node": {
-            "id": "gid://shopify/ProductVariant/45344627556523",
-            "title": "45.00 / 50.00",
+            "id": "gid://shopify/ProductVariant/45344664027307",
+            "title": "Regular",
             "price": {
               "amount": "45.0"
+            }
+          }
+        },
+        {
+          "node": {
+            "id": "gid://shopify/ProductVariant/45344667664555",
+            "title": "Large (15 stem bouquet)",
+            "price": {
+              "amount": "50.0"
             }
           }
         }

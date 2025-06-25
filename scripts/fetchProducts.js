@@ -25,7 +25,7 @@ const query = `
             }
           }
         }
-        variants(first: 1) {
+        variants(first: 3) {
           edges {
             node {
               id

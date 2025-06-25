@@ -62,26 +62,28 @@ const CartDrawer = () => {
                         {/* <div className="text-sm text-gray-600">
                           Variant: {variant.title}
                         </div> */}
-                        <div className="text-sm font-medium text-primary mt-1">
+                        <div className="text-sm font-medium text-primary mt-1 ">
                           ${Number(variant.price.amount).toFixed(2)}
                         </div>
 
                         {/* Quantity controls */}
                         <div className="flex items-center gap-2 mt-2 cursor-pointer">Quantity:
+                          <div className="bg-gray-200 flex items-center gap-1">
                           <button
                             onClick={() => updateCartItem(line.id, line.quantity - 1)}
                             disabled={line.quantity <= 1}
-                            className="px-2 py-1 bg-gray-200 rounded"
+                            className="px-2 py-1 cursor-pointer"
                           >
                             −
                           </button>
-                          <span>{line.quantity}</span>
+                          <span className="border-x-1 px-2 border-gray-300">{line.quantity}</span>
                           <button
                             onClick={() => updateCartItem(line.id, line.quantity + 1)}
-                            className="px-2 py-1 bg-gray-200 rounded cursor-pointer"
+                            className="px-2 py-1 cursor-pointer"
                           >
                             +
                           </button>
+                          </div>
                         </div>
 
                         <button

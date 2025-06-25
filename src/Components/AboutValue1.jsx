@@ -1,14 +1,9 @@
 import value1 from "../assets/imgs/value1.jpg";
 // import bouquet from "../assets/icons/bouquet.png";
-import background from "../assets/imgs/value1bg.svg";
 
 const AboutValue1 = () => {
   return (
-    <div className="md:h-[500px] flex flex-col justify-center items-center bg-secondary">
-      <img
-        src={background}
-        className="absolute min-h-125 object-cover opacity-5"
-      />
+    <div className="md:h-[500px] flex flex-col justify-center items-center bg-secondary patternBackground">
       <div className="max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-4 mx-5 lg:mx-0">
         <div className="lg:mt-0 mt-5 flex flex-col justify-center items-start text-left">
           <span className="inline-flex items-baseline mb-2">

@@ -4,9 +4,7 @@ import HomeProducts from "../Components/HomeProducts";
 import HomeAbout from "../Components/HomeAbout";
 import HomeCustom from "../Components/HomeCustom";
 import HomeTestimonials from "../Components/HomeTestimonials";
-import InstagramGallery from "../Components/InstagramEmbed";
-
-
+import InstagramStaticEmbed from "../Components/InstagramStaticEmbed";
 
 import { useEffect } from "react";
 import AOS from "aos";
@@ -14,7 +12,7 @@ import "aos/dist/aos.css";
 
 const Home = () => {
   useEffect(() => {
-    AOS.init(); 
+    AOS.init();
   }, []);
 
   return (
@@ -25,7 +23,7 @@ const Home = () => {
       <HomeAbout />
       <HomeCustom />
       <HomeTestimonials />
-      <InstagramGallery />
+      <InstagramStaticEmbed />
     </div>
   );
 };

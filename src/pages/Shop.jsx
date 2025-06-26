@@ -20,7 +20,7 @@ const Shop = () => {
               <Link
                 to={`/shop/${product.handle}`}
                 key={product.id}
-                className="transition-transform duration-700 hover:scale-105 ease-in-out"
+                className="transition-transform duration-500 hover:scale-105 ease-in-out"
               >
                 <img
                   src={image?.url}

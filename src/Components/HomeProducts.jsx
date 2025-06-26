@@ -7,7 +7,8 @@ const HomeProducts = () => {
   
   return (
     <div className="p-4 flex flex-col items-center justify-center text-center max-w-7xl mx-auto py-10">
-      <h2 className="text-black mb-10">Our Bestsellers</h2>
+      <h2 className="text-black mb-0">Our Best-Selling Florals</h2>
+      <h3 className="text-black mb-10">our customers love them and you will too</h3>
       <div
         data-aos="zoom-in"
         data-aos-duration="2000"

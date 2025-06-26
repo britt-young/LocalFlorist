@@ -4,8 +4,6 @@ import Copyright from "./Copyright";
 import ContactForm from "./ContactForm";
 
 const Footer = () => {
-
-
   return (
     <footer className="bg-tertiary text-secondary pt-10">
       <div className="flex flex-col-reverse lg:flex-row max-w-5xl mx-auto px-6 md:flex justify-between gap-20 lg:gap-40">
@@ -19,11 +17,12 @@ const Footer = () => {
         </div>
 
         {/* Right Section: Contact Info */}
-        <div className="w-full md:w-1/2 space-y-4">
+        <div className="w-full md:w-1/2 ">
+        <div className="space-y-4">
           <img src={logo} alt="Logo" className="w-80 mb-4" />
-          <div className="flex items-center space-x-3">
+          <div className="flex items-center space-x-3 ">
             <FaPhoneAlt className="text-black" />
-            <p className="text-black">(123) 456-7890</p>
+            <p className="text-black ">(123) 456-7890</p>
           </div>
           <div className="flex items-center space-x-3">
             <FaEnvelope className="text-black" />
@@ -33,6 +32,11 @@ const Footer = () => {
             <FaMapMarkerAlt className="text-black" />
             <p className="text-black">123 Main St, City, Country</p>
           </div>
+          </div>
+          <div className="flex flex-col indent-10 mt-1">
+              <p className="text-black text-sm">Monday: 9am - 6pm</p>
+              <p className="text-black text-sm">Saturday: 10am - 4pm</p>
+            </div>
         </div>
       </div>
       {/* Site Map Section */}
@@ -128,7 +132,7 @@ const Footer = () => {
             <circle cx="18.4" cy="5.6" r="1.44" />
           </svg>
         </a>
-      </div>      
+      </div>
       <Copyright />
     </footer>
   );

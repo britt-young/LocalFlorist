@@ -22,7 +22,7 @@ const ContactHelp = () => {
           <div className="w-fit text-center mx-auto">
             <h3 className="mb-0">Talk to sales</h3>
             <p className="mb-0">
-              Main Office: <Link to="tel:15132624121">+1 (513) 262-4121</Link>
+              Main Office: <Link to="tel:15132624121" className="hover:underline">+1 (513) 262-4121</Link>
             </p>
           </div>
         </div>
@@ -36,7 +36,7 @@ const ContactHelp = () => {
           <div className="w-fit text-center mx-auto">
             <h3 className="mb-0">Message Support</h3>
             <a href={`mailto:${email}`}>
-              <p className="cursor-pointer mb-0">{email}</p>
+              <p className="cursor-pointer mb-0 hover:underline">{email}</p>
             </a>
           </div>
         </div>
@@ -50,7 +50,18 @@ const ContactHelp = () => {
           />
           <div className="w-fit text-center mx-auto">
             <h3 className="mb-0">Visit us in store</h3>
-            <p className="mb-0">Open 9am-6pm (M-F)</p>
+            <a 
+  href="https://maps.app.goo.gl/UJR5s9meuZzPYBP59" 
+  target="_blank" 
+  rel="noopener noreferrer" 
+  class="text-white hover:underline"
+>
+123 Main St., Tallahassee, FL</a>
+            
+            <div className="flex flex-col  mt-1">
+              <p className="text-sm">Monday: 9am - 6pm</p>
+              <p className="text-sm">Saturday: 10am - 4pm</p>
+            </div>
           </div>
         </div>
       </div>

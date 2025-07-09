@@ -7,10 +7,10 @@ import ContactForm2 from "./ContactForm2";
 const Footer = () => {
   return (
     <footer className="bg-tertiary text-secondary pt-10">
-      <div className="flex flex-col-reverse lg:flex-row max-w-6xl mx-auto px-6 md:flex justify-between gap-20 lg:gap-40">
+      <div className="flex flex-col-reverse lg:flex-row max-w-6xl mx-auto px-6 md:flex gap-20 lg:gap-40">
         {/* Left Section: Contact Form */}
         <div className="w-full md:w-1/2 text-center">
-          <h3 className="text-primary font-semibold mb-2">Custom Order Request Form</h3>
+          <h3 className="text-primary font-serif mb-2">Custom Order Request Form</h3>
           {/* <h5 className="text-black/50 mb-5">
             send us details about your requested order
           </h5> */}
@@ -19,7 +19,7 @@ const Footer = () => {
         </div>
 
         {/* Right Section: Contact Info */}
-        <div className="w-full md:w-1/2 ">
+        <div className="w-full md:w-1/2">
           <div className="space-y-4">
             <img src={logo} alt="Logo" className="w-80 mb-4" />
             <div className="flex items-center space-x-3 ">

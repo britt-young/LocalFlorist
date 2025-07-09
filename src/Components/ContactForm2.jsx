@@ -72,40 +72,35 @@ const ContactForm2 = ({ clientName = "default" }) => {
 
         {/* Radio Buttons */}
         <fieldset className="space-y-2 text-start">
-  <legend className="font-medium mb-1 text-primary">Order Type:</legend>
-  <div className="flex flex-col md:flex-row md:gap-10">
+          <legend className="font-medium mb-2 text-primary">Order Type:</legend>
+          <div className="flex flex-col gap-1">
+            {/* Option 1 */}
+            <label className="inline-flex items-center gap-2 text-black/40 hover:text-black transition-colors duration-150">
+              <input
+                type="radio"
+                name="option"
+                value="Bulk Order(s)"
+                required
+                className="form-radio accent-secondary peer cursor-pointer"
+              />
+              <span className="peer-checked:text-black">Bulk Order(s)</span>
+            </label>
 
-    {/* Option 1 */}
-    <label className="inline-flex items-center gap-2 text-black/40 hover:text-black transition-colors duration-150">
-      <input
-        type="radio"
-        name="option"
-        value="Bulk Order(s)"
-        required
-        className="form-radio accent-secondary peer cursor-pointer"
-      />
-      <span className="peer-checked:text-black">
-        Bulk Order(s)
-      </span>
-    </label>
-
-    {/* Option 2 */}
-    <label className="inline-flex items-center gap-2 text-black/40 hover:text-black transition-colors duration-150">
-      <input
-        type="radio"
-        name="option"
-        value="Special Event Arrangement"
-        required
-        className="form-radio accent-secondary peer cursor-pointer"
-      />
-      <span className="peer-checked:text-black">
-        Special Event Arrangement
-      </span>
-    </label>
-
-  </div>
-</fieldset>
-
+            {/* Option 2 */}
+            <label className="inline-flex items-center gap-2 text-black/40 hover:text-black transition-colors duration-150">
+              <input
+                type="radio"
+                name="option"
+                value="Special Event Arrangement"
+                required
+                className="form-radio accent-secondary peer cursor-pointer"
+              />
+              <span className="peer-checked:text-black">
+                Special Event Arrangement
+              </span>
+            </label>
+          </div>
+        </fieldset>
 
         {/* Message */}
         <div>

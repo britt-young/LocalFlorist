@@ -8,6 +8,9 @@ import FAQs from './pages/FAQs'
 import Contact from './pages/Contact'
 import ProductDetails from './pages/ProductDetails'
 import Error from './Components/Error'
+import Shipping from './pages/Shipping'
+import Terms from './pages/Terms'
+import Privacy from './pages/Privacy'
 
 function App() {
 const router = createBrowserRouter(
@@ -19,6 +22,10 @@ const router = createBrowserRouter(
       <Route path ='shop/:handle' element={<ProductDetails />} />
       <Route path ='faqs' element={<FAQs />} />
       <Route path ='contact' element={<Contact />} />
+      <Route path='shipping' element={<Shipping />} />
+      <Route path='terms' element={<Terms />} />
+      <Route path='privacy' element={<Privacy />} />
+
       {/* Can add nested routes too */}
       <Route path ='*' element={<Error />} />
     </Route>

@@ -50,9 +50,9 @@ const Footer = () => {
             { href: "shop", text: "Shop All" },
             { href: "faqs", text: "FAQs" },
             { href: "contact", text: "Contact" },
-            { href: "#", text: "Shipping" },
-            { href: "#", text: "Terms of Use" },
-            { href: "#", text: "Privacy Policy" },
+            { href: "shipping", text: "Shipping" },
+            { href: "terms", text: "Terms of Use" },
+            { href: "privacy", text: "Privacy Policy" },
           ].map((link, index) => (
             <span key={index} className="inline-block relative">
               <span className="invisible font-bold">{link.text}</span>

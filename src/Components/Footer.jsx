@@ -40,52 +40,34 @@ const Footer = () => {
         </div>
       </div>
       {/* Site Map Section */}
-      <div className="max-w-11/12 mx-auto mt-15 lg:border-t border-primary pt-2 text-primary">
-        <div className="grid grid-flow-col grid-rows-2 lg:grid-rows-1 text-center items-center justify-center gap-8">
-          <div className="group">
-            <a href="/" className="group-hover:font-bold">
-              Home
-            </a>
-          </div>
-          <div className="group">
-            <a href="about" className="group-hover:font-bold">
-              About Us
-            </a>
-          </div>
-          <div className="group">
-            <a href="shop" className="group-hover:font-bold">
-              Shop All
-            </a>
-          </div>
-          <div className="group">
-            <a href="faqs" className="group-hover:font-bold">
-              FAQs
-            </a>
-          </div>
-          <div className="group">
-            <a href="contact" className="group-hover:font-bold">
-              Contact
-            </a>
-          </div>
+<div className="max-w-11/12 mx-auto mt-15 lg:border-t border-primary pt-2 text-primary">
+  <div className="flex flex-wrap justify-center items-center gap-8">
+    {[
+      { href: '/', text: 'Home' },
+      { href: 'about', text: 'About Us' },
+      { href: 'shop', text: 'Shop All' },
+      { href: 'faqs', text: 'FAQs' },
+      { href: 'contact', text: 'Contact' },
+      { href: '#', text: 'Shipping' },
+      { href: '#', text: 'Terms of Use' },
+      { href: '#', text: 'Privacy Policy' },
+    ].map((link, index) => (
+      <span key={index} className="inline-block relative">
+        <span className="invisible font-bold">{link.text}</span>
+        <a
+          href={link.href}
+          className="absolute top-0 left-0 w-full hover:font-bold text-center"
+        >
+          {link.text}
+        </a>
+      </span>
+    ))}
+  </div>
+</div>
 
-          <div className="group">
-            <a href="#" className="group-hover:font-bold">
-              Shipping
-            </a>
-          </div>
-          <div className="group">
-            <a href="#" className="group-hover:font-bold">
-              Terms of Use
-            </a>
-          </div>
-          <div className="group">
-            <a href="#" className="group-hover:font-bold">
-              Privacy Policy
-            </a>
-          </div>
-        </div>
-      </div>
-      {/* Sicial Media Icons */}
+
+
+      {/* Social Media Icons */}
       <div className="flex items-center justify-center my-10 gap-4">
         <a
           href="https://facebook.com"

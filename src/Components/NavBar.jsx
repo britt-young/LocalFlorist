@@ -34,25 +34,53 @@ const NavBar = () => {
 
         {/* Desktop menu */}
         <ul className="hidden lg:flex justify-center items-center w-full space-x-14">
-          <li className="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0">
-            <NavLink to="/about">About</NavLink>
-          </li>
-          <li className="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0">
-            <NavLink to="/shop">Shop</NavLink>
-          </li>
-          {/* Logo or brand */}
+          {/* Left Links */}
+          {[
+            { to: "/about", label: "About" },
+            { to: "/shop", label: "Shop" },
+          ].map((item, idx) => (
+            <li
+              key={idx}
+              className="relative mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0 inline-block text-center"
+            >
+              {/* Reserve space with bold clone */}
+              <span className="invisible font-bold block">{item.label}</span>
+              <NavLink
+                to={item.to}
+                className="absolute top-0 left-0 w-full hover:font-bold"
+              >
+                {item.label}
+              </NavLink>
+            </li>
+          ))}
+
+          {/* Logo in center */}
           <li className="text-xl font-bold">
             <NavLink to="/">
               <img src={logo} alt="Logo" className="h-auto w-auto" />
             </NavLink>
           </li>
-          <li className="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0">
-            <NavLink to="/faqs">FAQs</NavLink>
-          </li>
-          <li className="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0">
-            <NavLink to="/contact">Contact</NavLink>
-          </li>
+
+          {/* Right Links */}
+          {[
+            { to: "/faqs", label: "FAQs" },
+            { to: "/contact", label: "Contact" },
+          ].map((item, idx) => (
+            <li
+              key={idx}
+              className="relative mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0 inline-block text-center"
+            >
+              <span className="invisible font-bold block">{item.label}</span>
+              <NavLink
+                to={item.to}
+                className="absolute top-0 left-0 w-full hover:font-bold transition-all"
+              >
+                {item.label}
+              </NavLink>
+            </li>
+          ))}
         </ul>
+
         {/* <img src={cart} alt="cart" className="" /> */}
         {/* look-up {replace:true} for buttons/useNavigate Hook */}
       </nav>

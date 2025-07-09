@@ -10,9 +10,9 @@ const ContactHero = () => {
             <h1 className="text-center text-white">
               Contact Us
             </h1>
-            <h3 className="text-center text-white mb-0">
+            {/* <h3 className="text-center text-white mb-0">
               we respond as soon as possible
-            </h3>
+            </h3> */}
           </div>
         </div>
       );

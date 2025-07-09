@@ -1,19 +1,21 @@
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaHtml5 } from "react-icons/fa";
 import logo from "../assets/logos/logo-2.svg";
 import Copyright from "./Copyright";
-import ContactForm from "./ContactForm";
+import ContactForm2 from "./ContactForm2";
+// import ContactForm from "./ContactForm";
 
 const Footer = () => {
   return (
     <footer className="bg-tertiary text-secondary pt-10">
-      <div className="flex flex-col-reverse lg:flex-row max-w-5xl mx-auto px-6 md:flex justify-between gap-20 lg:gap-40">
+      <div className="flex flex-col-reverse lg:flex-row max-w-6xl mx-auto px-6 md:flex justify-between gap-20 lg:gap-40">
         {/* Left Section: Contact Form */}
-        <div className="w-full md:w-1/2">
-          <h2 className="text-black">Custom Orders</h2>
-          <h4 className="text-black/50 mb-10">
-            Send us a custom order request
-          </h4>
-          <ContactForm />
+        <div className="w-full md:w-1/2 text-center">
+          <h3 className="text-primary font-semibold mb-2">Custom Order Request Form</h3>
+          {/* <h5 className="text-black/50 mb-5">
+            send us details about your requested order
+          </h5> */}
+          <ContactForm2 clientName="localflorist" />
+          {/* <ContactForm /> */}
         </div>
 
         {/* Right Section: Contact Info */}
@@ -40,32 +42,30 @@ const Footer = () => {
         </div>
       </div>
       {/* Site Map Section */}
-<div className="max-w-11/12 mx-auto mt-15 lg:border-t border-primary pt-2 text-primary">
-  <div className="flex flex-wrap justify-center items-center gap-8">
-    {[
-      { href: '/', text: 'Home' },
-      { href: 'about', text: 'About Us' },
-      { href: 'shop', text: 'Shop All' },
-      { href: 'faqs', text: 'FAQs' },
-      { href: 'contact', text: 'Contact' },
-      { href: '#', text: 'Shipping' },
-      { href: '#', text: 'Terms of Use' },
-      { href: '#', text: 'Privacy Policy' },
-    ].map((link, index) => (
-      <span key={index} className="inline-block relative">
-        <span className="invisible font-bold">{link.text}</span>
-        <a
-          href={link.href}
-          className="absolute top-0 left-0 w-full hover:font-bold text-center"
-        >
-          {link.text}
-        </a>
-      </span>
-    ))}
-  </div>
-</div>
-
-
+      <div className="max-w-11/12 mx-auto mt-15 lg:border-t border-primary pt-2 text-primary">
+        <div className="flex flex-wrap justify-center items-center gap-8">
+          {[
+            { href: "/", text: "Home" },
+            { href: "about", text: "About Us" },
+            { href: "shop", text: "Shop All" },
+            { href: "faqs", text: "FAQs" },
+            { href: "contact", text: "Contact" },
+            { href: "#", text: "Shipping" },
+            { href: "#", text: "Terms of Use" },
+            { href: "#", text: "Privacy Policy" },
+          ].map((link, index) => (
+            <span key={index} className="inline-block relative">
+              <span className="invisible font-bold">{link.text}</span>
+              <a
+                href={link.href}
+                className="absolute top-0 left-0 w-full hover:font-bold text-center"
+              >
+                {link.text}
+              </a>
+            </span>
+          ))}
+        </div>
+      </div>
 
       {/* Social Media Icons */}
       <div className="flex items-center justify-center my-10 gap-4">

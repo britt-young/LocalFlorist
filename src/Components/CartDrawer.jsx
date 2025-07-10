@@ -15,7 +15,7 @@ const CartDrawer = () => {
         onClick={toggleDrawer}
         className="fixed lg:top-10 top-12 right-0 z-50 bg-primary text-white px-4 py-2 pr-10 cursor-pointer"
       >
-        <img src={basket} className="inline-block pe-1" />
+        <img src={basket} alt="Cart Icon" className="inline-block pe-1" />
         ({cart?.lines?.edges?.length || 0})
       </button>
 

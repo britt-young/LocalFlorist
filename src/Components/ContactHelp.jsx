@@ -22,7 +22,10 @@ const ContactHelp = () => {
           <div className="w-fit text-center mx-auto">
             <h3 className="mb-0">Talk to sales</h3>
             <p className="mb-0">
-              Main Office: <Link to="tel:15132624121" className="hover:underline">+1 (513) 262-4121</Link>
+              Main Office:{" "}
+              <Link to="tel:15132624121" className="hover:underline">
+                +1 (513) 262-4121
+              </Link>
             </p>
           </div>
         </div>
@@ -50,17 +53,21 @@ const ContactHelp = () => {
           />
           <div className="w-fit text-center mx-auto">
             <h3 className="mb-0">Visit us in store</h3>
-            <a 
-  href="https://maps.app.goo.gl/UJR5s9meuZzPYBP59" 
-  target="_blank" 
-  rel="noopener noreferrer" 
-  class="text-white hover:underline"
->
-123 Main St., Tallahassee, FL</a>
-            
-            <div className="flex flex-col  mt-1">
-              <p className="text-sm">Monday: 9am - 6pm</p>
-              <p className="text-sm">Saturday: 10am - 4pm</p>
+            <a
+              href="https://maps.app.goo.gl/UJR5s9meuZzPYBP59"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-white hover:underline"
+            >
+              123 Main St., Tallahassee, FL
+            </a>
+
+            <div className="flex flex-col text-start mt-2 indent-8">
+              <ul className="text-white text-sm">
+                <li>Mon-Fri: 9am - 6pm</li>
+                <li>Saturday: 9am - 4pm</li>
+                <li>Sunday: Closed</li>
+              </ul>
             </div>
           </div>
         </div>

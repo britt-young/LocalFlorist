@@ -8,7 +8,7 @@
       "edges": [
         {
           "node": {
-            "url": "https://cdn.shopify.com/s/files/1/0706/8916/1387/files/shop-bridal.jpg?v=1750170108",
+            "url": "https://cdn.shopify.com/s/files/1/0706/8916/1387/files/pexels-teona-swift-6913829.jpg?v=1752165437",
             "altText": null
           }
         }
@@ -46,7 +46,7 @@
       "edges": [
         {
           "node": {
-            "url": "https://cdn.shopify.com/s/files/1/0706/8916/1387/files/shop-bouquets.jpg?v=1750181000",
+            "url": "https://cdn.shopify.com/s/files/1/0706/8916/1387/files/kaboompics_red-roses-16285.jpg?v=1752165707",
             "altText": null
           }
         }
@@ -56,10 +56,19 @@
       "edges": [
         {
           "node": {
-            "id": "gid://shopify/ProductVariant/45310738071723",
-            "title": "Default Title",
+            "id": "gid://shopify/ProductVariant/45396087373995",
+            "title": "Regular",
             "price": {
               "amount": "40.0"
+            }
+          }
+        },
+        {
+          "node": {
+            "id": "gid://shopify/ProductVariant/45396087406763",
+            "title": "Large (15 stem bouquet)",
+            "price": {
+              "amount": "45.0"
             }
           }
         }
@@ -75,7 +84,7 @@
       "edges": [
         {
           "node": {
-            "url": "https://cdn.shopify.com/s/files/1/0706/8916/1387/files/shop-arrangements_de35b46c-ecef-4591-8ab9-696e74706aad.jpg?v=1750181376",
+            "url": "https://cdn.shopify.com/s/files/1/0706/8916/1387/files/kaboompics_beautiful-bouquet-flower-arrangement-floral-composition-30471.jpg?v=1752165735",
             "altText": null
           }
         }
@@ -85,10 +94,19 @@
       "edges": [
         {
           "node": {
-            "id": "gid://shopify/ProductVariant/45310743904427",
-            "title": "Default Title",
+            "id": "gid://shopify/ProductVariant/45396088488107",
+            "title": "Regular",
             "price": {
               "amount": "30.0"
+            }
+          }
+        },
+        {
+          "node": {
+            "id": "gid://shopify/ProductVariant/45396088520875",
+            "title": "Large (15 stem arrangement)",
+            "price": {
+              "amount": "35.0"
             }
           }
         }
@@ -104,13 +122,7 @@
       "edges": [
         {
           "node": {
-            "url": "https://cdn.shopify.com/s/files/1/0706/8916/1387/files/shop1.png?v=1750431949",
-            "altText": null
-          }
-        },
-        {
-          "node": {
-            "url": "https://cdn.shopify.com/s/files/1/0706/8916/1387/files/shop1_a64696e5-448c-43ab-8d8d-5d652516a91a.png?v=1750432078",
+            "url": "https://cdn.shopify.com/s/files/1/0706/8916/1387/files/pexels-larissafarber-16077012.jpg?v=1752165756",
             "altText": null
           }
         }
@@ -120,10 +132,19 @@
       "edges": [
         {
           "node": {
-            "id": "gid://shopify/ProductVariant/45322729717931",
-            "title": "Default Title",
+            "id": "gid://shopify/ProductVariant/45396089241771",
+            "title": "Regular",
             "price": {
               "amount": "40.0"
+            }
+          }
+        },
+        {
+          "node": {
+            "id": "gid://shopify/ProductVariant/45396089274539",
+            "title": "Large (15 stem bouquet)",
+            "price": {
+              "amount": "45.0"
             }
           }
         }
@@ -132,20 +153,14 @@
   },
   {
     "id": "gid://shopify/Product/8453702418603",
-    "title": "Whimsical Fairy Bouquet",
+    "title": "Whimsical Fairy Arrangement",
     "handle": "whimsical-fairy-bouquet",
-    "description": "The Whimsical Fairy Bouquet showcases a delicate and dainty arrangement in soft pink tones. Expertly designed, this bouquet combines subtle elegance with a gentle color palette, making it perfect for adding a refined touch to any occasion or space. Its graceful composition highlights the beauty of simplicity and charm.",
+    "description": "The Whimsical Fairy Arrangement showcases a delicate and dainty arrangement in soft pink tones. Expertly designed, this bouquet combines subtle elegance with a gentle color palette, making it perfect for adding a refined touch to any occasion or space. Its graceful composition highlights the beauty of simplicity and charm.",
     "images": {
       "edges": [
         {
           "node": {
-            "url": "https://cdn.shopify.com/s/files/1/0706/8916/1387/files/shop2.png?v=1750432269",
-            "altText": null
-          }
-        },
-        {
-          "node": {
-            "url": "https://cdn.shopify.com/s/files/1/0706/8916/1387/files/shop2_3aef8318-ddba-4ea8-8b32-9ecfff00d5a5.png?v=1750432277",
+            "url": "https://cdn.shopify.com/s/files/1/0706/8916/1387/files/pexels-janellecua-9153115.jpg?v=1752165782",
             "altText": null
           }
         }
@@ -155,10 +170,19 @@
       "edges": [
         {
           "node": {
-            "id": "gid://shopify/ProductVariant/45322732863659",
-            "title": "Default Title",
+            "id": "gid://shopify/ProductVariant/45396093239467",
+            "title": "Regular",
             "price": {
               "amount": "35.0"
+            }
+          }
+        },
+        {
+          "node": {
+            "id": "gid://shopify/ProductVariant/45396093272235",
+            "title": "Large (15 stem bouquet)",
+            "price": {
+              "amount": "40.0"
             }
           }
         }
@@ -169,12 +193,12 @@
     "id": "gid://shopify/Product/8453703106731",
     "title": "Spring Wildflower Bouquet",
     "handle": "spring-wildflower-bouquet",
-    "description": "Celebrate the freshness of spring with our Spring Wildflower Bouquet, thoughtfully arranged to highlight the natural beauty of organic design. This bouquet features a delicate mix of wildflowers in soft pastel hues, evoking the gentle charm of a blooming meadow. Perfect for adding a touch of seasonal elegance to any space, it brings a serene and authentic floral experience that reflects the effortless grace of nature. Ideal for those who appreciate expert craftsmanship and the subtle allure of spring’s finest blossoms.",
+    "description": "Celebrate the freshness of spring with our Spring Wildflower Bouquet, thoughtfully arranged to highlight the natural beauty of organic design. This bouquet features a delicate mix of wildflowers in bright yellows, evoking the charm of a blooming meadow. Perfect for adding a touch of seasonal elegance to any space, it brings a serene and authentic floral experience that reflects the effortless grace of nature. Ideal for those who appreciate expert craftsmanship and the subtle allure of spring’s finest blossoms.",
     "images": {
       "edges": [
         {
           "node": {
-            "url": "https://cdn.shopify.com/s/files/1/0706/8916/1387/files/shop3.png?v=1750432477",
+            "url": "https://cdn.shopify.com/s/files/1/0706/8916/1387/files/pexels-karolina-grabowska-4466545.jpg?v=1752165821",
             "altText": null
           }
         }
@@ -184,10 +208,19 @@
       "edges": [
         {
           "node": {
-            "id": "gid://shopify/ProductVariant/45322734436523",
-            "title": "Default Title",
+            "id": "gid://shopify/ProductVariant/45396094779563",
+            "title": "Regular",
             "price": {
               "amount": "45.0"
+            }
+          }
+        },
+        {
+          "node": {
+            "id": "gid://shopify/ProductVariant/45396094812331",
+            "title": "Large (15 stem bouquet)",
+            "price": {
+              "amount": "50.0"
             }
           }
         }
@@ -196,14 +229,14 @@
   },
   {
     "id": "gid://shopify/Product/8453703827627",
-    "title": "Dark Romance Bouqet",
+    "title": "Deep Romance Bouquet",
     "handle": "dark-romance-bouqet",
-    "description": "Immerse yourself in the timeless allure of the Dark Romance Bouquet. Featuring dark, deep red rose blooms, this classic arrangement evokes a profound sense of romance and sophistication. Perfect for expressing enduring love, its rich hues and elegant design make it an expert choice for intimate moments and refined settings.",
+    "description": "Immerse yourself in the timeless allure of the Deep Romance Bouquet. Featuring dark, deep red rose blooms, this classic arrangement evokes a profound sense of romance and sophistication. Perfect for expressing enduring love, its rich hues and elegant design make it an expert choice for intimate moments and refined settings.",
     "images": {
       "edges": [
         {
           "node": {
-            "url": "https://cdn.shopify.com/s/files/1/0706/8916/1387/files/shop4.png?v=1750432617",
+            "url": "https://cdn.shopify.com/s/files/1/0706/8916/1387/files/pexels-karolina-grabowska-8903960.jpg?v=1752165867",
             "altText": null
           }
         }
@@ -213,37 +246,17 @@
       "edges": [
         {
           "node": {
-            "id": "gid://shopify/ProductVariant/45322737811627",
-            "title": "Default Title",
+            "id": "gid://shopify/ProductVariant/45396096090283",
+            "title": "Regular",
             "price": {
               "amount": "35.0"
             }
           }
-        }
-      ]
-    }
-  },
-  {
-    "id": "gid://shopify/Product/8453704220843",
-    "title": "Firecracker Bouquet",
-    "handle": "firecracker-bouquet",
-    "description": "The Firecracker Bouquet features an elegant arrangement of red and white roses crafted into an organic shape, creating a dynamic and natural flow. This expert design highlights the vibrant contrast between the deep red and pristine white blooms, making it a striking centerpiece for any occasion. Perfect for expressing passion and purity simultaneously, this bouquet combines classic beauty with contemporary artistry.",
-    "images": {
-      "edges": [
+        },
         {
           "node": {
-            "url": "https://cdn.shopify.com/s/files/1/0706/8916/1387/files/shop5.png?v=1750432762",
-            "altText": null
-          }
-        }
-      ]
-    },
-    "variants": {
-      "edges": [
-        {
-          "node": {
-            "id": "gid://shopify/ProductVariant/45322740400299",
-            "title": "Default Title",
+            "id": "gid://shopify/ProductVariant/45396096123051",
+            "title": "Large (15 stem bouquet)",
             "price": {
               "amount": "40.0"
             }
@@ -253,21 +266,15 @@
     }
   },
   {
-    "id": "gid://shopify/Product/8453704548523",
-    "title": "Fall Florals Bouquet",
-    "handle": "fall-florals-bouquet",
-    "description": "Celebrate the subtle beauty of autumn with the Fall Florals Bouquet. This expertly arranged collection features soft orange hues and delicate fall florals, creating a refined and understated seasonal display. Perfect for adding a touch of warmth and elegance to any space, its muted colors evoke the gentle transition of fall, making it an ideal choice for sophisticated seasonal décor.",
+    "id": "gid://shopify/Product/8453704220843",
+    "title": "Babydoll Bouquet",
+    "handle": "firecracker-bouquet",
+    "description": "This Babydoll Bouquet features a delicate arrangement wrapped in a soft purple ribbon, combining elegance with a gentle touch. Perfect for special occasions, its refined presentation enhances the beauty of the blooms while providing a comfortable grip. Ideal for gifting or decorating, this bouquet offers a sophisticated and charming floral experience.",
     "images": {
       "edges": [
         {
           "node": {
-            "url": "https://cdn.shopify.com/s/files/1/0706/8916/1387/files/shop6.png?v=1750432887",
-            "altText": null
-          }
-        },
-        {
-          "node": {
-            "url": "https://cdn.shopify.com/s/files/1/0706/8916/1387/files/shop6_0d920805-2cd1-4f2c-9a34-e0d17a897f5c.png?v=1750432893",
+            "url": "https://cdn.shopify.com/s/files/1/0706/8916/1387/files/pexels-olenkabohovyk-11116390.jpg?v=1752165908",
             "altText": null
           }
         }
@@ -277,10 +284,19 @@
       "edges": [
         {
           "node": {
-            "id": "gid://shopify/ProductVariant/45322741383339",
-            "title": "Default Title",
+            "id": "gid://shopify/ProductVariant/45396096909483",
+            "title": "Regular",
             "price": {
-              "amount": "35.0"
+              "amount": "40.0"
+            }
+          }
+        },
+        {
+          "node": {
+            "id": "gid://shopify/ProductVariant/45396096942251",
+            "title": "Large (15 stem bouquet)",
+            "price": {
+              "amount": "45.0"
             }
           }
         }

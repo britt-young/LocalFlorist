@@ -1,4 +1,9 @@
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaHtml5 } from "react-icons/fa";
+import {
+  FaPhoneAlt,
+  FaEnvelope,
+  FaMapMarkerAlt,
+  FaHtml5,
+} from "react-icons/fa";
 import logo from "../assets/logos/logo-2.svg";
 import Copyright from "./Copyright";
 import ContactForm2 from "./ContactForm2";
@@ -10,7 +15,6 @@ const Footer = () => {
       <div className="flex flex-col-reverse lg:flex-row max-w-6xl mx-auto px-6 md:flex gap-20 lg:gap-40">
         {/* Left Section: Contact Form */}
         <div className="w-full md:w-1/2 text-center">
-          <h3 className="text-primary font-serif mb-2">Custom Order Request Form</h3>
           {/* <h5 className="text-black/50 mb-5">
             send us details about your requested order
           </h5> */}
@@ -35,10 +39,11 @@ const Footer = () => {
               <p className="text-black">123 Main St, City, Country</p>
             </div>
           </div>
-          <div className="flex flex-col indent-10 mt-1">
-            <p className="text-black text-sm">Monday: 9am - 6pm</p>
-            <p className="text-black text-sm">Saturday: 10am - 4pm</p>
-          </div>
+          <ul className="flex flex-col indent-10 mt-1 text-black text-sm">
+            <li>Mon-Fri: 9am - 6pm</li>
+            <li>Saturday: 9am - 4pm</li>
+            <li>Sunday: Closed</li>
+          </ul>
         </div>
       </div>
       {/* Site Map Section */}

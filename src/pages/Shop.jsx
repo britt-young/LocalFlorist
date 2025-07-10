@@ -1,5 +1,5 @@
 //MULTIPLE PRODUCTS PAGE
-// USING STATIC REGENERATION This page displays a list of products fetched from a JSON file.
+//USING STATIC REGENERATION This page displays a list of products fetched from a JSON file (JSON file data reccieved from Shopify Storefront)
 
 import ShopHero from "../Components/ShopHero";
 import products from "../data/products.json";
@@ -9,8 +9,8 @@ const Shop = () => {
   return (
     <div>
       <ShopHero />
-      <div className="max-w-7xl mx-auto px-4 py-10 flex flex-col items-center">
-        <h2 className="text-black mb-6">Pick From Our Garden</h2>
+      <div className="max-w-7xl mx-auto px-4 py-30 flex flex-col items-center">
+        <h2 className="text-black mb-10">Pick From Our Garden</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
           {products.map((product) => {
             const image = product.images.edges[0]?.node;

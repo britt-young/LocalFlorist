@@ -12,9 +12,13 @@ const AboutValue2 = () => {
                     /> */}
                       <h2 className="text-white">Responsibly Priced Arrangements</h2>
                   </span>
-              <p className="text-white">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut, fuga. Amet totam accusamus architecto consequatur sunt sequi eius iste cupiditate magnam quaerat, accusantium qui. Sunt sequi aut nisi magnam animi similique ipsam porro necessitatibus architecto maxime. Corporis ad quo, dolorem aliquid vero earum repudiandae inventore veritatis odio beatae
-              </p>
+              <h6 className="text-white">
+                We offer responsibly priced arrangements without compromising
+                on quality or style. Whether you’re looking for a simple bouquet
+                or something more elaborate, we provide thoughtful,
+                handcrafted designs to fit a range of budgets—always fresh,
+                always made with care.
+              </h6>
       </div>
     </div>
   );

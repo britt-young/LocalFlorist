@@ -8,8 +8,8 @@ const AboutValues = () => {
       <div className="text-center">
         <h2 className="text-black mb-2">Our Values</h2>
         <h3 className="text-primary">
-          We are committed to excellence, integrity, and innovation in
-          everything we do.
+          We are committed to beautiful arrangements, fair pricing, and
+          exceptional service
         </h3>
       </div>
       <div

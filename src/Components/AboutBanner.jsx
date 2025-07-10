@@ -15,8 +15,8 @@ const AboutBanner = () => {
           >
             <circle r={1} cx={1} cy={1} />
           </svg>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, incidunt!
-        </p>   
+          Fresh, locally sourced, and sustainably grown flower arrangements made with care
+        </p>
       </div>
     </div>
   );

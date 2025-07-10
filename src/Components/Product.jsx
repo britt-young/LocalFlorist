@@ -62,7 +62,7 @@ const Product = () => {
               Add to Cart — ${activeVariant ? Number(activeVariant.price.amount).toFixed(2) : '0.00'}
             </button>
 
-            <p className="text-primary mb-6">{product.description}</p>
+            <p className="text-primary mt-6">{product.description}</p>
           </div>
         </div>
       </div>

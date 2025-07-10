@@ -37,7 +37,9 @@ const ContactForm2 = ({ clientName = "default" }) => {
             Don’t fill this out if you’re human: <input name="bot-field" />
           </label>
         </p>
-
+        <h3 className="text-primary font-semibold mb-5 text-center">
+          Custom Order Request Form
+        </h3>
         {/* First & Last Name Side by Side */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <input

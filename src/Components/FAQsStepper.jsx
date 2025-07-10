@@ -6,7 +6,7 @@ const faqData = [
     questions: [
       {
         q: "How do I place a custom order?",
-        a: "You can place a custom order by contacting us directly through our website or phone number.",
+        a: "You can place a custom order by submitting a request using our order form below.",
       },
       {
         q: "What is the maximum number of flower types I can choose?",
@@ -31,7 +31,7 @@ const faqData = [
     questions: [
       {
         q: "Do you offer same day pickup/ delivery?",
-        a: "Yes, same day services are available for orders placed before 11 AM.",
+        a: "Yes, same day services are available for our 'same day bouquets'",
       },
       {
         q: "Do you charge a delivery fee?",
@@ -60,11 +60,11 @@ const faqData = [
       },
       {
         q: "How do I request an event order?",
-        a: "Submit a form on our events page or call us directly.",
+        a: "Submit a request using our custom order form on our website or call us directly.",
       },
       {
         q: "When should I put in my event order request?",
-        a: "Please submit your request at least 1 month before the event date.",
+        a: "For events requiring 20+ arrangements, please submit your request at least 3 month before the event date.",
       },
     ],
   },

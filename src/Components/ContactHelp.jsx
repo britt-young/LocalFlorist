@@ -57,7 +57,7 @@ const ContactHelp = () => {
               href="https://maps.app.goo.gl/UJR5s9meuZzPYBP59"
               target="_blank"
               rel="noopener noreferrer"
-              class="text-white hover:underline"
+              className="text-white hover:underline"
             >
               123 Main St., Tallahassee, FL
             </a>

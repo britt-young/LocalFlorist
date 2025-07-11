@@ -1,11 +1,8 @@
-import {
-  TiPhone ,
-  TiMail ,
-  TiWorld ,
-} from "react-icons/ti";
+import { TiPhone, TiMail, TiWorld } from "react-icons/ti";
 import logo from "../assets/logos/logo-2.svg";
 import Copyright from "./Copyright";
 import ContactForm2 from "./ContactForm2";
+import { Link } from 'react-router-dom';
 // import ContactForm from "./ContactForm";
 
 const Footer = () => {
@@ -26,15 +23,15 @@ const Footer = () => {
           <div className="space-y-4">
             <img src={logo} alt="Logo" className="w-80 mb-4" />
             <div className="flex items-center space-x-3 ">
-              <TiPhone  className="text-black" />
+              <TiPhone className="text-black" />
               <p className="text-black ">(123) 456-7890</p>
             </div>
             <div className="flex items-center space-x-3">
-              <TiMail  className="text-black" />
+              <TiMail className="text-black" />
               <p className="text-black">info@example.com</p>
             </div>
             <div className="flex items-center space-x-3">
-              <TiWorld  className="text-black" />
+              <TiWorld className="text-black" />
               <p className="text-black">123 Main St, City, Country</p>
             </div>
           </div>
@@ -45,6 +42,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
+
       {/* Site Map Section */}
       <div className="max-w-11/12 mx-auto mt-15 lg:border-t border-primary pt-2 text-primary">
         <div className="flex flex-wrap justify-center items-center gap-8">
@@ -60,12 +58,12 @@ const Footer = () => {
           ].map((link, index) => (
             <span key={index} className="inline-block relative">
               <span className="invisible font-bold">{link.text}</span>
-              <a
-                href={link.href}
+              <Link
+                to={`/${link.href}`}
                 className="absolute top-0 left-0 w-full hover:font-bold text-center"
               >
                 {link.text}
-              </a>
+              </Link>
             </span>
           ))}
         </div>

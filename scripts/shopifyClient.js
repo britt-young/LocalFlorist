@@ -1,8 +1,5 @@
 
 import { GraphQLClient } from 'graphql-request';
-import dotenv from 'dotenv';
-dotenv.config();
-
 
 const DOMAIN = process.env.VITE_SHOPIFY_DOMAIN;
 const TOKEN = process.env.VITE_SHOPIFY_STOREFRONT_TOKEN;

@@ -1,8 +1,8 @@
 import {
-  FaPhoneAlt,
-  FaEnvelope,
-  FaMapMarkerAlt,
-} from "react-icons/fa";
+  TiPhone ,
+  TiMail ,
+  TiWorld ,
+} from "react-icons/ti";
 import logo from "../assets/logos/logo-2.svg";
 import Copyright from "./Copyright";
 import ContactForm2 from "./ContactForm2";
@@ -26,15 +26,15 @@ const Footer = () => {
           <div className="space-y-4">
             <img src={logo} alt="Logo" className="w-80 mb-4" />
             <div className="flex items-center space-x-3 ">
-              <FaPhoneAlt className="text-black" />
+              <TiPhone  className="text-black" />
               <p className="text-black ">(123) 456-7890</p>
             </div>
             <div className="flex items-center space-x-3">
-              <FaEnvelope className="text-black" />
+              <TiMail  className="text-black" />
               <p className="text-black">info@example.com</p>
             </div>
             <div className="flex items-center space-x-3">
-              <FaMapMarkerAlt className="text-black" />
+              <TiWorld  className="text-black" />
               <p className="text-black">123 Main St, City, Country</p>
             </div>
           </div>

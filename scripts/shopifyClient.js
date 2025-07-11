@@ -1,10 +1,10 @@
 
 import { GraphQLClient } from 'graphql-request';
-import dotenv from 'dotenv';
-dotenv.config();
+// import dotenv from 'dotenv';
+// dotenv.config();
 
-const DOMAIN = process.env.VITE_SHOPIFY_DOMAIN;
-const TOKEN = process.env.VITE_SHOPIFY_STOREFRONT_TOKEN;
+const DOMAIN = import.meta.env.VITE_SHOPIFY_DOMAIN;
+const TOKEN = import.meta.env.VITE_SHOPIFY_STOREFRONT_TOKEN;
 
 export const shopifyClient = new GraphQLClient(
   `https://${DOMAIN}/api/2023-04/graphql.json`,

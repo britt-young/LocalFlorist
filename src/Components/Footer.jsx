@@ -2,7 +2,7 @@ import { TiPhone, TiMail, TiWorld } from "react-icons/ti";
 import logo from "../assets/logos/logo-2.svg";
 import Copyright from "./Copyright";
 import ContactForm2 from "./ContactForm2";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 // import ContactForm from "./ContactForm";
 
 const Footer = () => {
@@ -47,19 +47,19 @@ const Footer = () => {
       <div className="max-w-11/12 mx-auto mt-15 lg:border-t border-primary pt-2 text-primary">
         <div className="flex flex-wrap justify-center items-center gap-8">
           {[
-            { href: "/", text: "Home" },
-            { href: "about", text: "About Us" },
-            { href: "shop", text: "Shop All" },
-            { href: "faqs", text: "FAQs" },
-            { href: "contact", text: "Contact" },
-            { href: "shipping", text: "Shipping" },
-            { href: "terms", text: "Terms of Use" },
-            { href: "privacy", text: "Privacy Policy" },
+            { to: "/", text: "Home" },
+            { to: "about", text: "About Us" },
+            { to: "shop", text: "Shop All" },
+            { to: "faqs", text: "FAQs" },
+            { to: "contact", text: "Contact" },
+            { to: "shipping", text: "Shipping" },
+            { to: "terms", text: "Terms of Use" },
+            { to: "privacy", text: "Privacy Policy" },
           ].map((link, index) => (
             <span key={index} className="inline-block relative">
               <span className="invisible font-bold">{link.text}</span>
               <Link
-                to={`/${link.href}`}
+                to={`/${link.to}`}
                 className="absolute top-0 left-0 w-full hover:font-bold text-center"
               >
                 {link.text}
@@ -68,7 +68,6 @@ const Footer = () => {
           ))}
         </div>
       </div>
-
       {/* Social Media Icons */}
       <div className="flex items-center justify-center my-10 gap-4">
         <a

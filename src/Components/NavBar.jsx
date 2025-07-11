@@ -1,12 +1,12 @@
-import { React, useState } from "react";
-import { NavLink, useNavigate } from "react-router-dom"; //provides an active class to the link (can use for css styling)
-//import { ReactComponent as Logo } from "../assets/logos/logo-1.svg"; //importing the logo
+import { useState } from "react";
+import { NavLink, useNavigate } from "react-router-dom"; 
+//import { ReactComponent as Logo } from "../assets/logos/logo-1.svg";
 import logo from "../assets/logos/logo-1.svg";
 //import cart from "../assets/icons/shop-basket.png";
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const navigate = useNavigate;
+  // const navigate = useNavigate;
 
   return (
     <div className="bg-tertiary text-primary">
@@ -85,7 +85,7 @@ const NavBar = () => {
         {/* look-up {replace:true} for buttons/useNavigate Hook */}
       </nav>
 
-      {/* Mobile menu (will be toggled based on isMenuOpen) */}
+      
       {/* Mobile menu (will be toggled based on isMenuOpen) */}
 <div className={`lg:hidden ${isMenuOpen ? "block" : "hidden"}`}>
   <ul className="flex flex-col items-center space-y-4 px-4 py-2">

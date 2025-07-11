@@ -2,7 +2,6 @@ import {
   FaPhoneAlt,
   FaEnvelope,
   FaMapMarkerAlt,
-  FaHtml5,
 } from "react-icons/fa";
 import logo from "../assets/logos/logo-2.svg";
 import Copyright from "./Copyright";
